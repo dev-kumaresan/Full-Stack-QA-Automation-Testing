@@ -1,2 +1,2 @@
 # Full-Stack-QA-Automation-Testing
-Java Salenium
+Java Selenium
