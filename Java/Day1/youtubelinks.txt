@@ -1,0 +1,4 @@
+Install Java 8 on linux -----> https://youtu.be/WD3e_JKnMLY
+Install Eclipse Oxygen 3a -----> https://youtu.be/lpgCpKFVYK4    https://youtu.be/Bhgnz6aZg1Y
+create and build first program on eclipse -----> https://youtu.be/-MyRj80YhZU
+in eclipse, editor does not contain error,solution -----> https://youtu.be/BiSsX2OXfck

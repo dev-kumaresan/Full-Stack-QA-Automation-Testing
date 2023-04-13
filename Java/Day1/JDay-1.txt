@@ -1,0 +1,101 @@
+JAVA:
+=====
+
+what is java?
+
+Java is a widely used object-oriented programming language and software platform
+that runs on billions of devices, including notebook computers, mobile devices, gaming consoles, medical devices and many others.
+
+It is developed by Sun Microsystems, and it was released in 1995.
+James Gosling initially developed Java in Sun Microsystems (which was later merged with Oracle Corporation)
+
+
+Java: 
+        Simple programming language.
+	Platform Independent 
+	Run multiple application at a time
+	Oops based one
+	Easy to run and debug  (Compiletime Error and Runtime Error)
+Main Features:
+	Open sources- free Version
+	Platform independent ((Will run in all os).
+	Multi threading	
+	More Secure.
+
+Features of Java:-
+==================
+Object-Oriented:
+.................
+Java supports the features of object-oriented programming.
+Its object model is simple and easy to expand.
+
+Platform independent:
+.....................
+C and C++ are platform dependency languages hence the application programs written in one Operating system cannot run in any other Operating system,
+but in platform independence language like Java application programs written in one Operating system can able to run on any Operating system.
+
+Simple:
+.......
+Java has included many features of C / C ++, which makes it easy to understand.
+
+Secure:
+....... 
+Java provides a wide range of protection from viruses and malicious programs.
+It ensures that there will be no damage and no security will be broken.
+
+Portable: - "Write once run anywhere"
+.........   
+Java provides us with the concept of portability. 
+Running the same program with Java on different platforms is possible.
+
+Robust:
+....... 
+During the development of the program, it helps us to find possible mistakes as soon as possible.
+
+Multi-threaded:
+............... 
+The multithreading programming feature in Java allows you to write a program that performs several different tasks simultaneously.
+
+
+What is an IDE?-Integrated Development Environment 
+............
+it is a software application that helps programmers develop software code efficiently (or Enables programmers to writing a computer program.). 
+
+It increases developer productivity by combining capabilities such as software editing, building, testing, and packaging in an easy-to-use application.
+
+Notepad
+Eclipse IDE:((Starting-3.2, Current-14.23, standard-oxygen4.7))
+Netbeans
+Jdeveloper
+Rad
+VS
+
+Java Enviranment:
+=================
+
+JDK -Java Development kit 
+.........................
+
+Eg:Cricket Kit, Safety Kit.
+
+It is a bundle of software development tools and supporting libraries combined with the Java Runtime Environment (JRE) and Java Virtual Machine (JVM).
+
+Whenever we want to run or develop a programe in java JDK is essantial
+
+Starting 1.0 current 1.21 Standard Version 1.8
+
+JRE-Java Runtime Environment- it contains pre defined files and libraries.
+.............................
+
+JRE, is a software layer that runs on top of a computer’s operating system software.
+
+It provides the class libraries and other resources that a specific Java program needs to run.
+
+JVM- Java Virtual Machine 
+.........................
+
+JVM is specifically responsible for converting bytecode to machine-specific code (Binary Code).  (Loads the code , Verifies code and Executes the code.)
+
+It is also platform-dependent.
+
+Used for Runtime Memory allocation and Object creation.
