@@ -1,0 +1,229 @@
+What is workspace?
+...................
+A workspace is a location on your machine where "all the work you do through Eclipse will be stored" as files. 
+
+Naming Convention:
+...................
+1.Pascal Notation/IniCap Notation:
+First Letter Of Every Word Should Be In Capital Letter.
+ 
+Eg: IciciBank,MyFirstProgram,LoginPage,FacebookLogin.
+
+Followed in: ProjectName,ClassName.
+
+2.camelNotation:
+first letter of first word should be small remaining every word first letter should be 
+capital.
+
+Eg: iciciBank,myFirstProgram,loginPage,facebookLogin.
+
+Followed in: methodName.
+
+Project:
+========
+How to create a project?
+........................
+file-->new -->java project-->project name -->ok.
+
+Eg:Amazon,Facebook. (PascalNotation)
+
+Package:
+========
+-A set of classes and interfaces grouped together are known as Packages in JAVA
+
+-Package names are written in all lower case to avoid conflict with the names of classes or interfaces.
+
+Uses:
+
+-Java package is used to categorize the classes and interfaces so that they can be easily maintained.
+
+-Easy to locate the related classes and Reuse the existing classes in packages
+
+How to create a package?
+........................
+Under project we have (src)
+right click on src--->new-->package-->name-->ok
+
+Naming the package:
+Extension-->Companyname-->Clientname-->Modulename.
+
+Eg:com.tcs.citibank.creditcard.
+	org.aiite.trainer.java.
+
+Types of Brakets:
+..................
+{ }	=> 	Braces/Flower Bracket
+[ ]	=> 	Square Bracket
+( )	=>	Functional Bracket
+< >	=>	Angular Bracket
+
+
+Class:
+======
+-Class is a Template or Blue print which consist of functions and data members.
+
+-Collection of object.
+
+-When classes are defined, no memory is allocated.  However, when we create objects of these classes, memory is allocated in the heap.
+
+Syntax
+------
+
+public class className
+{
+
+}
+
+Method:  [commeding line, compile and runtime , compile and runtime error]
+=======
+
+Activity of the class, it consist of business logic.
+
+A method in Java is a block of code when called, performs specific actions mentioned in it.
+
+The primary uses of methods in Java are:
+
+    It allows code reusability (define once and use multiple times)
+    You can break a complex program into smaller chunks of code
+    It increases code readability.
+
+Syntax
+-------
+public void methodName(){
+
+//business logic
+
+}
+
+
+Main Method:
+============
+
+A main() method in java is an entry point to start the execution of a program. Every Java application has at least one class and at least one main method.
+
+"Execution Starts from main method."
+
+Syntax
+------
+public static void main(String[] args)
+{
+
+}
+
+Object:
+=======
+
+-An object is a class instance that allows programmers to use variables and methods from inside the class.
+When objects are created, memory is allocated to them in the heap memory.
+
+-Objects represent a real-world entity that you’re trying to deal with.
+
+-Object is an instance(Single Occurance) of a class.
+
+-It is reference and performs run time memory allocation.
+
+-It is an super class of java.
+
+Example: Mobile is a class. If Mobile is the class then iphone, redmi, blackberry, samsung are its objects which have different properties and behaviours.
+
+Obeject Creation:
+------------------
+ClassName objectName = new ClassName();   // WelcomeProgram wm=new WelcomeProgram();
+
+Method Call:
+..................
+
+objectName.MethodName(); //accessing the methods
+
+
+
+FirstProgram:
+---------------
+package com.march.sample;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+		System.out.println("Hai everyone welcome ");
+
+	}
+
+}
+
+---------
+
+package com.march.sample;
+
+public class FirstProgram {
+
+	public void welcomeMethod() {
+		System.out.println("Hai everyone welcome to aiite academy");
+	}
+
+	public static void main(String[] args) {
+		FirstProgram fp = new FirstProgram();
+		fp.welcomeMethod();
+		System.out.println("Thankyou");
+
+	}
+
+}
+-----------------------------------------
+With in the package or same package code re-usability:
+
+package com.march.sample;
+
+public class MobilePhone {
+	public void textMessage() {
+		System.out.println("Text Message Method");
+	}
+
+	public void audioMessage() {
+		System.out.println("Audio Message Method");
+	}
+
+	public void videoMessage() {
+		System.out.println("Video Message Method");
+	}
+
+	public void photoMessage() {
+		System.out.println("Photo Message Method");
+	}
+
+	public static void main(String[] args) {
+		MobilePhone mp = new MobilePhone();
+		mp.audioMessage();
+		mp.photoMessage();
+		mp.textMessage();
+		mp.videoMessage();
+	}
+
+}
+
+.....
+
+Outside the package or different package code re-usability:
+
+package org.march.firstday;
+
+import com.march.sample.FirstProgram;
+
+public class Car {
+	public void drivingMethod() {
+		System.out.println("Drive Method");
+	}
+
+	public void reveseMethod() {
+		System.out.println("Reverse Method");
+	}
+
+	public static void main(String[] args) {
+		Car c = new Car();
+		FirstProgram fp = new FirstProgram();
+		c.drivingMethod();
+		c.reveseMethod();
+		fp.welcomeMethod();
+	}
+
+}
+
