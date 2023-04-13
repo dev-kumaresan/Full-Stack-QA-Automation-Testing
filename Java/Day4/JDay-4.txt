@@ -1,0 +1,221 @@
+Wrapper class  (Class of datatypes)
+==============
+
+The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+
+
+Primitive Type	Wrapper class
+-----------------------------
+boolean		        Boolean
+char			Character
+byte			Byte
+short			Short
+int			Integer
+long			Long
+float			Float
+double		        Double.
+
+
+Return Statement:
+==================
+Returning a value from method.
+
+In java every method is declared with a return type.such as int, float,double,string.
+
+These return types required a return statement at the end of the method.
+
+The return keyword is used for returning the resulted value.
+
+If we try to return a value from void method the compiler shows an error.
+
+Example Program:
+----------------
+package org.datatypes;
+
+public class TypesofVariables {
+	int a = 60;
+	int b = 50;
+
+	public int addition() { // void does not return anything
+		int c = a + b;
+		System.out.println(c);
+		return c;
+	}
+
+	public static void main(String[] args) {
+		TypesofVariables tv = new TypesofVariables();
+		int result = tv.addition(); // 110
+		System.out.println(result + 90);
+	}
+}
+
+
+PARAMETERS AND ARGUMENTS:
+==========================
+
+Information can be passed to methods as parameter.
+
+You can add as many parameters as you want, just separate them with a comma.
+
+When a parameter is passed to the method, it is called an argument.
+
+SYNTAX:
+------------
+public void methodname(arg1,arg2)
+{
+
+}
+
+call parameterized method
+---------------------------
+
+objectreferencename.methodname(parameter1,parameter2)
+
+Example Program:
+----------------
+package org.parameterised;
+
+package org.variable.types;
+
+public class ExampleParameterized {
+	String name;
+	int id;
+	String qualification;
+
+	public void studentDetails() {
+		System.out.println(name);
+		System.out.println(id);
+		System.out.println(qualification);
+	}
+
+	public static void main(String[] args) {
+		ExampleParameterized ep = new ExampleParameterized();
+		ep.name = "Aravind";
+		ep.id = 11;
+		ep.qualification = "BE";
+		ep.studentDetails();
+
+		ep.name = "Faizal";
+		ep.id = 22;
+		ep.qualification = "BTech";
+		ep.studentDetails();
+
+		ExampleParameterized ep1 = new ExampleParameterized();
+		ep.name = "Priyanka";
+		ep.id = 33;
+		ep.qualification = "BE";
+		ep.studentDetails();
+
+		ExampleParameterized ep2 = new ExampleParameterized();
+		ep.name = "Rajitha";
+		ep.id = 44;
+		ep.qualification = "BTech";
+		ep.studentDetails();
+	}
+}
+..........................
+
+package ins.firstday;
+
+public class StudentDetails {
+
+	public void studeDetails(String name, int id, int marks) {
+		System.out.println(name);
+		System.out.println(id);
+		System.out.println(marks);
+	}
+
+	public static void main(String[] args) {
+		StudentDetails s = new StudentDetails();
+		s.studeDetails("Dilip", 11, 234);
+		s.studeDetails("Khan", 22, 123);
+		StudentDetails s2 = new StudentDetails();
+		s2.studeDetails("Reka", 33, 134);
+		s2.studeDetails("Shobana", 44, 566);
+		s2.studeDetails("shaki", 55, 987);
+
+	}
+}
+
+..............................
+
+package org.parameterised;
+
+public class Student {
+
+	package org.variable.types;
+
+public class ExampleParameterized {
+	int a;
+
+	public void studentDetails(String name, int id, String qualification) {
+		System.out.println(name);
+		System.out.println(id);
+		System.out.println(qualification);
+	}
+
+	public static void main(String[] args) {
+		ExampleParameterized ep = new ExampleParameterized();
+		ep.studentDetails("Aravind", 11, "BE");
+		ep.studentDetails("Faizal", 22, "BTECH");
+		ExampleParameterized ep1 = new ExampleParameterized();
+		ep1.studentDetails("Priyanka", 33, "Rajitha");
+
+	}
+}
+
+ACCESS SPECIFIER:
+-----------------
+
+In Java, the access specifier used for "restricting the scope" of a class and its data members, member function, and constructor.
+
+1.private
+2.protected 
+3.public
+4.default
+
+
+PRIVATE
+-------
+
+The private access modifier is accessible only within the class.
+
+PROTECTED
+---------
+
+We can access the protected data members and member functions of a class within the same package or the subclasses in different packages.
+
+PUBLIC
+------
+
+We can access the methods and variables of a class from anywhere in the program, which is declared as public.
+
+In simple words, no restriction is allowed on the scope of public data members.
+
+DEFAULT
+-------
+
+If you don't use any specier it is treated as default by default.
+
+The default modifier is accessible only within package.It cannot be accessed from outside the package. 
+
+It provides more accessibility than private.But, it is more restrictive than protected, and public.
+
+
+Important Points:
+------------------
+Access specifiers define the visibility of the class.
+If no keyword is mentioned then that is default access modifier.
+Four modifiers in Java include public, private, protected and default.
+*Private and Protected keywords cannot be used for classes and interfaces.
+
+Access Modifier --within class	--within package  --outside package by subclass only --outside package
+
+Private			Y		N		N				N
+
+Default	 		Y		Y		N				N
+
+Protected		Y		Y		Y				N
+
+Public			Y		Y		Y				Y
+
