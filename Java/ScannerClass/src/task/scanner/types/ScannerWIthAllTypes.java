@@ -13,6 +13,7 @@ public class ScannerWIthAllTypes {
 		double mark;
 		short ref_no;
 		byte batch_no;
+		boolean P;
 
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter Your Name : ");
@@ -34,6 +35,8 @@ public class ScannerWIthAllTypes {
 		ref_no = s.nextShort();
 		System.out.println("Enter your batch no : ");
 		batch_no = s.nextByte();
+		System.out.println("Enter true or false : ");
+		P = s.nextBoolean();
 
 		System.out.println("Your name is : " + name);
 		System.out.println("Your full name is : " + full_name);
@@ -44,7 +47,8 @@ public class ScannerWIthAllTypes {
 		System.out.println("Your aadhar is : " + aadhar);
 		System.out.println("Your mark is : " + mark);
 		System.out.println("Your ref no is : " + ref_no);
-		System.out.println("Your batch bo is : " + batch_no);
+		System.out.println("Your batch no is : " + batch_no);
+		System.out.println("enter true or false : " + P);
 
 	}
 
