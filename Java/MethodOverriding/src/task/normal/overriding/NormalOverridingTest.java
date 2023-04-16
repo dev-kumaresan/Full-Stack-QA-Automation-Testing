@@ -1,7 +1,7 @@
 package task.normal.overriding;
 
 public class NormalOverridingTest {
-	public void methodOne()
+	public static void methodOne()
 	{
 		System.out.println("methodOne");
 	}
