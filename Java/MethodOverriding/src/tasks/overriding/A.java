@@ -8,7 +8,7 @@ public class A {
 		System.out.println("Annanagar");
 		System.out.println("Ambattur");
 		System.out.println("Adyar");
-		
+
 	}
 
 }
