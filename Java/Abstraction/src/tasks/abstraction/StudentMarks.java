@@ -20,6 +20,7 @@ public class StudentMarks extends AbstractClassExample {
 		SM.studentAddress();
 		SM.stud2(); // calling interface A here
 		SM.stud3(); // calling interface B here
+		SM.DefaultOverride(); // default method override
 
 	}
 
