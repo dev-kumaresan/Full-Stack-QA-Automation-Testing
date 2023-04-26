@@ -6,7 +6,7 @@ public class EmpDetails {
 	}
 
 	EmpDetails(String Emp_name, String Emp_city) {
-		this((long) 1234567890);
+		this(1234567890l);
 		System.out.println("Emp Name : " + Emp_name);
 		System.out.println("Emp City : " + Emp_city);
 	}
