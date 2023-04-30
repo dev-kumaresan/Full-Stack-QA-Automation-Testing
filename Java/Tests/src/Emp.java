@@ -5,6 +5,7 @@ public class Emp {
 
 	public void fun1() {
 		System.out.println("This is fun1");
+		
 	}
 
 	public static void fun2() {
