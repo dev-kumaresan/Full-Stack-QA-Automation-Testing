@@ -1,0 +1,206 @@
+Day1_Class,method,object      task2aiite@gmail.com
+
+DAY1:
+-------
+1.Java Introduction
+2.Class,Method,Object
+3.Same package and Different package
+
+
+QUESTIONS(Theory):
+------------
+1.What is platform independent?
+2.What is open source?
+3.Difference between JDK,JRE,JVM?
+4.why we go for java?
+
+5.What is the latest version of JDK and which version you are using in your project?
+6.What is the latest version of eclispe and which version you are using in your project? 
+7.Difference between c++ and java?
+8.Features of java?
+9.What type of tool you are using in your project to execute java?
+Eclipse
+10.Difference between class,method,object?
+11.Where object stores?
+Ans: heap Memory
+12.How to access one class method into different package class?
+By creating Object reference and it will get import automatically
+14.Coding standard to create project,class,method,package and object ?
+15.What gives Java it's "write once and run anywhere" nature?
+Platorm indipendent 
+
+QUESTIONS(Programs):
+-----------------
+QUESTION 1:
+------------
+     Project   :EmployeeDetails
+     Package   :org.emp
+     Class     :Employee 
+     Methods   :empId(),empName(),empDob(),empPhone(),empEmail(),empAddress()
+
+Description:
+Create an object for employee class and call above methods also follow the all coding standards.
+
+QUESTION 2: 
+-------------
+     Project   :Al-RightAddress
+     Package   :org.add
+     Class     :Al-RightTech
+     Methods   :Al-RightOmr(),Al-RightAdayar(),Al-RightTambaram(),Al-RightVelacherry(),Al-RightAnnaNagar()
+
+Description:
+Create an object for Al-RightTech class and call above methods also follow the all coding standards.
+
+QUESTION 3:
+------------
+   Project     :CompanyDetails
+   Package     :org.company
+   Class       :CompanyInfo
+   Methods     :companyName(),companyId(),companyAddress()
+
+Description:
+Create an object for CompanyDetails class and call above methods also follow the all coding standards.
+
+QUESTION 4:
+-----------
+   Project     :MyPhone
+   Package     :org.phone
+   Class       :PhoneInfo
+   Methods     :phoneName(),phoneMieiNum(),Camera(),storage(),osName()
+
+Description:
+Create an object for PhoneInfo class and call above methods also follow the all coding standards.
+
+QUESTION 5:
+------------
+     Project   :LanguageDetails
+     Package   :org.lang
+
+     Class     :LanguageInfo
+     Methods   :tamilLanguage(),englishLanguage(),hindiLanguage()
+
+     Class     :StateDetails
+     Methods   :southIndia(),northIndia()
+
+Description:
+Create an object for LanguageInfo and StateDetails  inside the StateDetails class
+ call both classes methods also follow the all coding standards.
+
+QUESTION 6:
+-----------
+     Project   :EmployeeInformation
+     Package   :org.emp
+     Class     :Employee
+     Methods   :empName()
+
+     Package   :org.company
+     Class     :Company
+     Methods   :companyName()
+
+     Package   :org.client
+     Class     :Client
+     Methods   :clientName()
+
+     Package   :org.project
+     Class     :Project
+     Methods   :projectName()
+
+Description:
+Create an object for all 4 classes  inside the Employee class and call all classes methods also follow the all coding standards.
+
+QUESTION 7:
+-------------
+     Project   :PhoneDetails
+     Package   :org.phone
+     Class     :ExternalStorage
+     Methods   :size()
+
+     Class     :InternalStorage
+     Methods   :processorName(),ramSize()
+
+Description:
+Create an object for ExternalStorage and InternalStorage inside the InternalStorage class and call both classes methods also follow the all coding standards.
+
+QUESTION 8:
+------------
+     Project   :CollegeInformation
+     Package   :org.college
+     Class     :College
+     Methods   :collegeName(),collegeCode(),collegeRank()
+
+     Class     :Student
+     Methods   :studentName(),studentDept(),studentId()
+
+     Class     :Hostel
+     Methods   :hostelName()
+
+     Class     :Dept
+     Methods   :deptName()
+
+Description:
+Create an object for all 4 classes  inside the College class and call all classes methods also follow the all coding standards.
+
+ 
+QUESTION 9:
+------------
+     Project   :VehicleInformation
+     Package   :org.allvehicle
+     Class     :Vehicle
+     Methods   :VehicleNecessery()
+
+     Package   :org.twowheeler
+     Class     :TwoWheller
+     Methods   :bike(),cycle()
+
+     Package   :org.threewheeler
+     Class     :ThreeWheeler
+     Methods   :Auto()
+
+     Package   :org.fourwheeler
+     Class     :FourWheeler
+     Methods   :car(),bus(),lorry()
+
+Description:
+Create an object for all 4 classes  inside the Vehicle class and call all classes methods also follow the all coding standards.   
+
+QUESTION 10:
+--------------
+     Project   :TransportInformation
+     Package   :org.transport
+     Class     :Transport
+     Methods   :TransportForm
+     
+     Package   :org.road
+     Class     :Road
+     Methods   :bike(),cycle(),bus(),car()
+
+     Package   :org.air
+     Class     :Air
+     Methods   :aeroPlane(),heliCopter()
+
+     Package   :org.water
+     Class     :Water
+     Methods   :boat(),ship()
+
+Description:
+Create an object for all 4 classes  inside the Transport class and call all classes methods also follow the all coding standards.   
+
+
+QUESTION 11:
+--------------
+     Project   :NetworkInformation
+     Package   :org.network
+     Class     :Wifi
+     Methods   :wifiName()
+
+     Class     :MobileData
+     Methods   :dataName()
+
+     Class     :Lan
+     Methods   :lanName()
+
+     Class     :Wireless
+     Methods   :modamName()
+
+Description:
+Create an object for all 4 classes  inside the Wifi class and call all classes methods also follow the all coding standards.
