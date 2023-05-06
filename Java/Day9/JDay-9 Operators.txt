@@ -1,0 +1,330 @@
+Operators:
+===========
+1.Unary Operator:
+.................
+Postfix:
+Exp++
+int a=10;
+a++ -> a+1
+c=a++ (15)->  c=10 -> a=a+1 -> a=11
+	      c=11    a=11+1   a=12
+              c=12    a=12+1   a=13
+	      c=13    a=13+1   a=14
+	      c=14    a=14+1   a=15
+              c=15    .....
+
+Prefix:
+++Exp
+c=++a       c=11 a=a+1
+            c=12 a=12+1
+	    c=13 a=12+1
+            c=14 a=14+1
+            c=15............
+
+
+..........................................................
+2.Arithmetic Operator:
+...................
++ - * / %
+
+a=10/2=5
+a=10%2=0
+a=10%3=1
+
+.............................................................  
+3.Relational Operator:
+.....................
+< > <= >= == !=
+
+a=100 b=200
+
+a<b     100<200   true
+a>b     100>200   false
+a<=b    100<=200  true 100<=100 true
+a=>b    100=>200  false
+
+20=20 true
+20!=20  false
+
+Difference b/w = and ==
+= -->  Assignment operator    a=10; b=20; c=100;
+== --> Comparison operator  age=18; age==18; doc=voterid;  aadhar==voterid  voterid==voterid;
+............................................................
+
+4.Logical Operator:
+.................
+&&- Logical AND--> Exp1 and Exp 2 Must be TRUE
+ 
+exp1 && exp2            
+100=100 && 2>=2
+true && true    true
+100!=100 && 20>=2 
+false && true   false
+
+t && t    True
+t && f    false
+f && t    false 
+f && f    false
+
+
+|| Logical OR---> Exp1 or Exp2 either one should be TRUE
+
+t || t  True
+t || f  True
+f || t  True
+f || f  False
+
+
+! Logical NOT
+Exp true  result False
+Exp false result True
+
+5.Assignment Operator:
+....................
++=, -=, *=, /=, %=
+
++= ----  a=10; b=20; b+=a; 20+=10 b=30
+-= ----  b-=a; 20-10 b=10;
+*= ----  b*=a; 20*10 b=200
+/= ----  b\=a; 20/10 b=2
+%= ----  b%=a; 20%10 b=0
+
+
+6.Ternary Operator:   ?:
+..................
+ Syntax:
+
+Variable=Exp?exp1:exp2
+variable=(condition)?true:false      age=18  vote=(age<=18)?Eligible for vote:Not eligible   --->output:
+======================================================================================================
+
+Controlflow Statement:
+======================
+
+control statements to control the flow of execution of a program based on certain conditions. These are used to cause the flow of execution to advance.
+Using control statements we implement real world scenarios in programs.
+There are three types of Control Statements in Java:
+
+    Decision-Making Statements
+    Loop Statements
+    Jump or Branch Statements
+
+
+Decision Making Statement:
+--------------------------
+
+Decision making statements execute a piece of code based on some condition.
+
+IF STATEMENT:
+.............
+1.Simple if:
+-------------
+-if statement is used to decide whether a particular block of code will be executed or not based on a certain condition.
+
+-If the condition is true, then the code is executed otherwise not.
+
+syntax:
+if(condition)
+{
+statement;
+}
+
+Example program:
+----------------
+package org.controlstatements;
+
+import java.util.Scanner;
+
+public class ControlflowStatements {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your age:");
+		int age = s.nextInt();
+		if (age >= 18) {
+			System.out.println("Eligible for Vote");
+		}
+
+	}
+
+}
+--------------------------
+2.if else:
+............
+The if statement is used to execute a block of code based on a condition.
+But if the condition is false and we want to do some other task when the condition is false, how should we do it?
+
+That's where else statement is used. In this, if the condition is true then the code inside the if block is executed otherwise the else block is executed.
+
+syntax:
+if(condition)
+{
+true statement;
+}
+else
+{
+false statement;
+}
+
+ex program:
+-----------
+package org.controlstatements;
+
+import java.util.Scanner;
+
+public class ControlflowStatements {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your age:");
+		int age = s.nextInt();
+		if (age >= 18) {
+			System.out.println("Eligible for Vote");  // true statement
+		} else {
+			System.out.println("Age criteria not met, so not eligible for vote");    // false statement
+		}
+
+	}
+
+}
+--------------------------
+3.if else if ladder:
+.....................
+-if statement is followed by multiple else-if blocks. We can create a decision tree by using these control statements in Java.
+
+-in which the block where the condition is true is executed and the rest of the ladder is ignored and not executed.
+
+-If none of the conditions is true, the last else block is executed, if present.
+
+syntax:
+.......
+
+if(condition 1) {    
+statement 1; //executes when condition 1 is true   
+}  
+else if(condition 2) {  
+	statement 2; //executes when condition 2 is true   
+	}  
+	elseif {  
+	statement 2; //executes when all the conditions are false   
+	} 
+
+Example
+........
+package org.controlflow.statement;
+
+public class OperatosExample {
+
+	public static void main(String[] args) {
+		System.out.println("Proofs for vote:");
+		String proof = "aadhar";
+		if (proof == "voterid") {
+			System.out.println("Voter id valid allow for vote");
+		} else if (proof == "aadhar") {
+			System.out.println("Aadhar valid so allow for vote");
+		} else if (proof == "rationcard") {
+			System.out.println("Rationcard valid so allow for vote");
+		} 
+	}
+
+}
+
+....................
+
+4.Nested -if:  (Works on Logical AND basis)
+..............
+
+Nested if refers to an if statement within an if statement. When we write an inner if condition within an outer if condition,
+then it is referred to as a nested if statement in java.
+
+syntax:
+..........
+
+if(condition 1) {    
+statement 1; //executes when condition 1 is true   
+if(condition 2) {  
+statement 2; //executes when condition 2 is true   
+}  
+else{  
+statement 2; //executes when condition 2 is false   
+
+}  
+}  
+
+Example Program:
+----------------
+
+package org.controlflow.statement;
+
+public class OperatosExample {
+
+	public static void main(String[] args) {
+		int age=54;
+		String proof="aadhar";
+		if(age>=18) {
+			if(proof=="aadhar") 
+				System.out.println("both has been checked eligible for vote");
+			}
+		}
+	}
+
+
+----------------------------------------------------------------
+
+Switch Statement:
+=================
+-Switch statements are almost similar to the if-else-if ladder control statements in Java. It is a multi-branch statement.
+-It is a bit easier than the if-else-if ladder and also more user-friendly and readable.
+
+-The switch statements have an expression and based on the output of the expression, one or more blocks of codes are executed.
+
+-These blocks are called cases. We may also provide a default block of code that can be executed when none of the cases are matched similar to the else block.
+
+syntax:
+.......
+
+switch (expression){  
+    case value1:  
+     statement1;  
+     break;  
+    .  
+    .  
+    .  
+    case valueN:  
+     statementN;  
+     break;  
+    default:  
+     default statement;  
+}  
+
+Example:
+package org.controlstatements;
+
+public class ControlflowStatements {
+	public static void main(String[] args) {
+		String Shirt = "m";
+		switch (Shirt) {
+		case "s":
+			System.out.println("Small Size shirts available here");
+			break;
+
+		case "m":
+			System.out.println("Medium Size shirts available here");
+			break;
+
+		case "l":
+			System.out.println("Long Size shirts available here");
+			break;
+
+		case "xl":
+			System.out.println("Xtra Large Size shirts available here");
+			break;
+		default:
+			System.out.println("Not Available in Showroom");
+			break;
+		}
+	}
+}------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
