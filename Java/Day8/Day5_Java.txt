@@ -1,0 +1,201 @@
+DAY5:
+-----
+1.Constructor and types
+2.this and super
+3.types of var
+4.static/final
+
+
+QUESTIONS(Theory)
+-------------------
+1.What is mean by constructor and types?
+2.Explain the types of variable
+3.Do constructors have any return type?
+4.Syntax for creating constructor?
+5.What are the rules for defining a constructor?
+7.Why a return type is not allowed for constructor?
+8.Can we declare constructor as 'private'?
+9.Why a compiler given constructor is called as default constructor?
+10.What is constructor chaining and how can it be achieved in Java?
+11.Can we use this() and super() in a method?
+12.What are the common uses of "this" keyword in java?
+13.Types of variable?
+14.What is meant by local variable,instance variable,class/static variable?
+15.What is mean by static keyword in java?
+16.Can we override static method in java?
+17.Can we overload static method in java?
+18.What is mean by static variable?
+19.What is mean by static method?
+20.What is mean by final keyword and what's happend when we declare final as in class,method,variable?
+21.What is difference between final and finalize keyword?
+22.Where local,static and class variables stores in jvm?
+
+QUESTIONS(Find the below Output)
+----------------------------
+QUESTION 1:
+-------------
+package org.test;
+
+public class A {
+  public A() {
+    this("JAVA");
+    System.out.println("Default const...");
+  }
+
+  public A(int id) {
+    this(3456.5678f);
+    System.out.println(id);
+  }
+
+  public A(String name) {
+    this(12);
+    System.out.println(name);
+  }
+
+  public A(float sal) {
+    System.out.println(sal);
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+QUESTION 2:
+-----------
+package org.test;
+
+public class A extends B{
+  public A() {
+
+    System.out.println("Default const...");
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+package org.test;
+
+public class B  {
+  public B() {
+    System.out.println("Super class");
+  }
+
+}
+
+
+QUESTION 3:
+------------
+package org.test;
+
+public class A extends B{
+  public A() {
+
+    System.out.println("Default const...");
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+package org.test;
+
+public class B {
+  public B() {
+    System.out.println("Super class");
+  }
+
+  public B(int id) {
+    System.out.println(id);
+  }
+
+}
+
+QUESTION 4:
+------------
+package org.test;
+
+public class A extends B {
+  public A() {
+    super(12);
+    System.out.println("Default const...");
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+package org.test;
+
+public class B {
+  public B() {
+    System.out.println("Super class");
+  }
+
+  public B(int id) {
+    System.out.println(id);
+  }
+
+}
+
+QUESTION 5:
+-----------
+package org.test;
+
+public class B {
+
+  public B(int id) {
+    System.out.println(id);
+  }
+
+}
+
+package org.test;
+
+public class A extends B {
+  public A() {
+    super(12);
+    System.out.println("Default const...");
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+QUESTION 6:
+------------
+package org.test;
+
+public class A extends B {
+  public A() {
+
+    System.out.println("Default const...");
+  }
+
+  public static void main(String[] args) {
+    A a = new A();
+  }
+
+}
+
+package org.test;
+
+public class B {
+
+  public B(int id) {
+    System.out.println(id);
+  }
+
+}
+
+ 

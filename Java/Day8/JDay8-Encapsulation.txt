@@ -1,0 +1,153 @@
+Encapsulation:(POJO Class-Plain Old Java Object)
+================================================
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code (methods) together as a single unit. 
+
+In encapsulation, the variables of a class will be hidden from other classes,
+and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
+To achieve encapsulation in Java −
+
+    Declare the variables of a class as private.
+
+    Provide public setter and getter methods to modify and view the variables values.
+
+
+package org.encapsulation;
+
+public class Mark {
+	private static int sem_mark = 64;
+
+	public int getsem_mark() {
+		return sem_mark;
+	}
+
+	public void setsem_mark(int mark) {
+		this.sem_mark = mark;
+		System.out.println("updated mark:" + this.sem_mark);
+
+	}
+
+}
+
+..............
+
+package org.encapsulation;
+
+public class College extends Mark {
+	public static void main(String[] args) {
+		College student = new College();
+		College staff = new College();
+		System.out.println(student.getsem_mark());
+		staff.setsem_mark(77);
+	}
+
+}
+
+Benefits of Encapsulation:
+--------------------------
+    The fields of a class can be made read-only or write-only.
+
+    A class can have total control over what is stored in its fields.
+
+
+
+Operators:
+===========
+1.Unary Operator:
+.................
+Postfix:
+Exp++
+int a=10;
+a++ -> a+1
+c=a++ (15)->  c=10 -> a=a+1 -> a=11
+	      c=11    a=11+1   a=12
+              c=12    a=12+1   a=13
+	      c=13    a=13+1   a=14
+	      c=14    a=14+1   a=15
+              c=15    .....
+
+Prefix:
+++Exp
+c=++a       c=11 a=a+1
+            c=12 a=12+1
+	    c=13 a=12+1
+            c=14 a=14+1
+            c=15............
+
+
+..........................................................
+2.Arithmetic Operator:
+...................
++ - * / %
+
+a=10/2=5
+a=10%2=0
+a=10%3=1
+
+.............................................................  
+3.Relational Operator:
+.....................
+< > <= >= == !=
+
+a=100 b=200
+
+a<b     100<200   true
+a>b     100>200   false
+a<=b    100<=200  true 100<=100 true
+a=>b    100=>200  false
+
+20=20 true
+20!=20  false
+
+Difference b/w = and ==
+= -->  Assignment operator    a=10; b=20; c=100;
+== --> Comparison operator  age=18; age==18; doc=voterid;  aadhar==voterid  voterid==voterid;
+............................................................
+
+4.Logical Operator:
+.................
+&&- Logical AND--> Exp1 and Exp 2 Must be TRUE
+ 
+exp1 && exp2            
+100=100 && 2>=2
+true && true    true
+100!=100 && 20>=2 
+false && true   false
+
+t && t    True
+t && f    false
+f && t    false 
+f && f    false
+
+
+|| Logical OR---> Exp1 or Exp2 either one should be TRUE
+
+t || t  True
+t || f  True
+f || t  True
+f || f  False
+
+
+! Logical NOT
+Exp true  result true
+Exp false result false
+
+5.Assignment Operator:
+....................
++=, -=, *=, /=, %=
+
++= ----  a=10; b=20; b+=a; 20+=10 b=30
+-= ----  b-=a; 20-10 b=10;
+*= ----  b*=a; 20*10 b=200
+/= ----  b\=a; 20/10 b=2
+%= ----  b%=a; 20%10 b=0
+
+
+6.Ternary Operator:   ?:
+..................
+ Syntax:
+
+Variable=Exp?exp1:exp2
+variable=(condition)?true:false      age=18  vote=(age<=18)?Eligible for vote:Not eligible   --->output:
+======================================================================================================
+
