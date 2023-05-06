@@ -1,0 +1,270 @@
+Abstraction
+============
+
+       Hiding the implementation part.
+       Data abstraction is the process of hiding certain details and showing only essential information to the user.
+
+Two types:
+----------
+•	Abstract class(Partial abstraction)
+•	Interface(Fully abstraction)
+
+
+Abstract class:
+--------------
+•	An abstract class and methods should be declared with an abstract keyword.
+•	It can have abstract and non-abstract methods.
+•	we cant create object.
+•	It can have constructors and static methods also.
+•	Contains keyword extends.
+
+Example Program:
+----------------
+package org.absractionIinterface;
+
+public abstract class AiiteAcademy {
+	public abstract void salaryCalculation();
+
+	public abstract void placementRecords();
+
+	public void demo() {
+		System.out.println("Demo method");
+	}
+
+	public static void main(String[] args) {
+		// AiiteAcademy a=new AiiteAcademy(); // Cannot instantiate the Abstract Class
+	}
+
+}
+-----------------------
+package org.absractionIinterface;
+
+public class AiiteJavaTrainer extends AiiteAcademy {
+
+	@Override
+	public void salaryCalculation() {
+
+		System.out.println("Java Trainers salary-25000");
+	}
+
+	@Override
+	public void placementRecords() {
+		System.out.println("Placement Percentage-97%");
+
+	}
+
+	public static void main(String[] args) {
+//		AiiteJavaTrainer a = new AiiteJavaTrainer();
+//		a.placementRecords();
+//		a.salaryCalculation();
+//		a.demo();
+
+		AiiteAcademy aa = new AiiteJavaTrainer();
+		aa.placementRecords();
+		aa.salaryCalculation();
+		aa.demo();
+
+	}
+
+}
+
+
+
+Points to remember:
+-------------------
+-An abstract class can have abstract and/or non-abstract methods.
+
+-The abstract may or may not contain the final variables.
+
+-An abstract class can have final, static or non-static or non-final variables.
+
+-An abstract class may provide interface implementation.
+
+-An abstract class is inherited using the “extends” keyword.
+
+-An abstract class can extend other classes or implement multiple interfaces. 
+
+-An abstract class can have private or protected data members apart from public members.
+
+
+
+
+
+INTERFACE:
+==========
+Interface:(Fully Abstraction)
+-----------
+ A Java interface contains static constants and abstract methods.
+•	It contain abstract methods.
+•	It contain keywords implements.
+•	fields are public static and final by default.
+•	we cant create object.
+•	only specifier can be used is public and abstract.
+•	We can have default and static method.
+
+
+Example Program:
+----------------
+package org.absractionIinterface;
+
+public interface SmartPhone {
+	int mem = 5; // public static final
+
+	public abstract void touchscreen();
+
+	public abstract void internet();
+
+	void display(); // by default it will take public abstract
+
+	public default void message() {
+		System.out.println("Interface default method");
+	}
+
+}
+
+...........
+
+package org.absractionIinterface;
+
+public class Samsung implements SmartPhone {
+
+	@Override
+	public void touchscreen() {
+		System.out.println("Samsung TouchScreen");
+
+	}
+
+	@Override
+	public void internet() {
+		System.out.println("Samsung internet");
+
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Samsung display");
+	}
+
+	public void facerecognition() {
+		System.out.println("Samsung Facerecognition");
+	}
+
+	public void message() {
+
+// Default method can override
+	}
+
+	public static void main(String[] args) {
+		Samsung s = new Samsung();
+		s.display();
+		s.facerecognition();
+		s.internet();
+		s.touchscreen();
+		s.message();
+	}
+
+}
+
+
+
+Multiple Inheritance achieved using Interface:
+----------------------------------------------
+package org.absractionIinterface;
+
+public interface SmartPhone {
+	int mem = 5; // public static final
+
+	public abstract void touchscreen();
+
+	public abstract void internet();
+
+	void display(); // by default it will take public abstract
+
+	public default void message() {
+		System.out.println("Interface default method");
+	}
+	
+	void hotSpot();
+
+}
+............
+package org.absractionIinterface;
+
+public interface SmartTv {
+	void wifi();
+
+	void gaming();
+
+	void app();
+
+	void hotSpot();
+
+}
+................
+package org.absractionIinterface;
+
+public class Samsung implements SmartPhone, SmartTv {
+
+	@Override
+	public void touchscreen() {
+		System.out.println("Samsung TouchScreen");
+
+	}
+
+	@Override
+	public void internet() {
+		System.out.println("Samsung internet");
+
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Samsung display");
+	}
+
+	public void facerecognition() {
+		System.out.println("Samsung Facerecognition");
+	}
+
+	public void message() {
+
+// Default method can override
+	}
+
+	public static void main(String[] args) {
+		Samsung s = new Samsung();
+		s.display();
+		s.facerecognition();
+		s.internet();
+		s.touchscreen();
+		s.message();
+		s.app();
+		s.internet();
+		s.gaming();
+	}
+
+	@Override
+	public void wifi() {
+		System.out.println("SamsungTV wifi");
+
+	}
+
+	@Override
+	public void gaming() {
+		System.out.println("SamsungTV gaming");
+
+	}
+
+	@Override
+	public void app() {
+		System.out.println("SamsungTV app");
+
+	}
+
+	@Override
+	public void hotSpot() {
+		System.out.println("Common Method");
+	}
+
+}
+
