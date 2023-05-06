@@ -1,0 +1,368 @@
+
+POLYMORPHISM: (Executing methods in more than one form)
+=============
+The word polymorphism means having many forms.
+Polymorphism allows us to perform a single action in different ways. 
+Poly--- many
+Morphism ---forms
+
+When there are multiple functions with the same name but different types or number of parameters then the functions are said to be overloaded.
+
+Two types of polymorphism:
+............................
+
+Method overloading (compile-time polymorphism)-Static Binding
+Method overriding (runtime polymorphism)-Dynamic Binding.
+
+METHOD OVERLOADING:
+-------------------
+Two or more methods may have the same name if they differ in parameters (different number of parameters, different types of parameters, or both).
+These methods are called overloaded methods and this feature is called method overloading. 
+
+Rules of Method Overloading:
+............................
+
+-Same class
+-Same method name
+-Diff argument 
+	.data type 
+	.order 
+	.number             
+
+
+Example Program:
+----------------
+
+package com.polymorphism;
+
+public class StudentDetails {
+	public void formFill() {
+		System.out.println(" No arguments method");
+	}
+
+	public void formFill(String name) {
+		System.out.println(" 1 arguments method");
+	}
+
+	public void formFill(String name, int num) {
+		System.out.println(" 2 arguments method");
+	}
+
+	public void formFill(int num, String name) {
+		System.out.println(" 2 arguments method but different order");
+	}
+
+	public void formFill(String name, int num1, int num2) {
+		System.out.println(" 3 arguments method");
+	}
+
+	public static void main(String[] args) {
+		StudentDetails sd = new StudentDetails();
+		sd.formFill("java", 8);
+		sd.formFill(3, "Selenium");
+		sd.formFill();
+		sd.formFill("abi", 123, 456);
+		sd.formFill("Java");
+
+	}
+
+}
+
+
+Example Program using "this" keyword:(this points to current class)
+-----------------------------------
+
+package com.polymorphism;
+
+public class StudentDetails {
+	public void formFill() {
+		this.formFill("Selenium");
+		System.out.println(" No arguments method");
+	}
+
+	public void formFill(String name) {
+		System.out.println(" 1 arguments method");
+	}
+
+	public void formFill(String name, int num) {
+		this.formFill("java", 1, 2);
+		System.out.println(" 2 arguments method");
+	}
+
+	public void formFill(String name, int num1, int num2) {
+		this.formFill();
+		System.out.println(" 3 arguments method");
+	}
+
+	public static void main(String[] args) {
+		StudentDetails sd = new StudentDetails();
+		sd.formFill("java", 8);
+
+	}
+
+}
+
+METHOD OVERRIDING:
+-------------------
+-Declaring a method in sub class which is already present in parent class is known as method overriding.
+
+-Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class. 
+
+In this case the method in parent class is called overridden method and the method in child class is called overriding method.
+
+
+"If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java."
+Method overriding is used for runtime polymorphism.
+
+
+Rules of Method Overriding:
+..........................
+
+-Same method name
+-Same argument
+-Diff class
+
+ Example Program:
+..................
+
+package com.polymorphism;
+
+public class RBI {
+	public void accountOpening() {
+		System.out.println("Account Open Fee-2000");
+	}
+
+	public void fixedDeposit() {
+		System.out.println("Interest Rate-8%");
+	}
+
+	public void recurringdDeposit() {
+		System.out.println("Interest Rate-11%");
+	}
+
+	public void insurance() {
+		System.out.println("INsurance");
+	}
+}
+.................
+package com.polymorphism;
+
+public class HSBC extends RBI {
+	public void accountOpening() {
+		System.out.println("HSBC-Account Open Fee-5000");
+	}
+
+	public void fixedDeposit() {
+		System.out.println("HSBC-Interest Rate-10%");
+	}
+
+	public void recurringdDeposit() {
+		System.out.println("HSBC-Interest Rate-13%");
+	}
+
+	public void loans() {
+		System.out.println("HSBC-Interest Rate-15%");
+	}
+
+	public static void main(String[] args) {
+		HSBC h = new HSBC();
+//		h.accountOpening();
+//		h.fixedDeposit();
+//		h.insurance();
+//		h.loans();
+//		h.recurringdDeposit();
+		RBI r = new HSBC();
+		r.accountOpening();
+		r.fixedDeposit();
+		r.recurringdDeposit();
+		r.insurance();
+
+	}
+
+}
+
+
+Advantage of method overriding:
+-------------------------------
+
+The main advantage of method overriding is that the class can give its own specific implementation to a inherited method without even modifying the parent class code.
+
+
+Using Super Keyword:
+.....................
+package com.polymorphism;
+
+public class HSBC extends RBI {
+	public void accountOpening() {
+		super.accountOpening();
+		System.out.println("HSBC-Account Open Fee-5000");
+	}
+
+	public void fixedDeposit() {
+		System.out.println("HSBC-Interest Rate-10%");
+	}
+
+	public void recurringdDeposit() {
+		System.out.println("HSBC-Interest Rate-13%");
+	}
+
+	public void loans() {
+		System.out.println("HSBC-Interest Rate-15%");
+	}
+
+	public static void main(String[] args) {
+		HSBC h = new HSBC();
+//		h.accountOpening();
+//		h.fixedDeposit();
+//		h.insurance();
+//		h.loans();
+//		h.recurringdDeposit();
+		RBI r = new HSBC();
+		r.accountOpening();
+		r.fixedDeposit();
+		r.recurringdDeposit();
+		r.insurance();
+
+	}
+
+}
+
+
+Static Block and Static Method:
+==============================
+
+STATIC BLOCK:
+------------
+This code inside the static block is executed only once: the first time the class is loaded into memory. 
+Static block will executed first before main method execution.
+
+syntax:
+........
+
+static
+{
+//statement 1;
+}
+
+
+MULTIPLE STATIC BLOCK
+---------------------
+eg:-
+......
+public class StaticBlockExample {
+	static {
+		System.out.println("Hai everyone welcome");
+		System.out.println("to AIITE academy");
+	}
+	{
+		System.out.println("Instance Block2");
+	}
+	static {
+		System.out.println("Static Block2");
+	}
+	{
+		System.out.println("Instance Block");
+	}
+
+	public static void main(String[] args) {
+		StaticBlockExample sb = new StaticBlockExample();
+
+	}
+
+}
+---------------------------------------------------------------------------
+
+Static Method
+................
+
+Static methods belong to the class and they will be loaded into the memory along with the class,
+you can invoke them without creating an object.(using the class name as reference).
+
+SYNTAX:
+......
+
+Public static void methodname()
+{
+........
+}
+
+
+Restriction on static method:
+-----------------------------
+•You cannot access a non-static member (method or, variable) from a static context.
+•This and super cannot be used in static context.
+•The static method can access only static type data (static type instance variable).
+•You cannot override a static method. you can just hide it.
+
+Static modifier:
+----------------
+It is applicable for methods and variables but not for classes. 
+Static methods can only access the static members of the class and can only be called by other static methods.
+
+Example program:
+................
+package com.polymorphism;
+
+public class NonAcessModifierExample {
+	int a = 10;
+	int b = 20;
+	static int c = 20;
+	int d;
+	static int e;
+
+	public void norMethod() {
+		d = a + b;
+		System.out.println("normalmethod" + d);
+	}
+
+	public static void staticcMethod() {
+		int a = 10 + 20; // implicitly it will take it as static
+		// e = a + b; // we cant use non static memebers is static field
+		System.out.println(e);
+	}
+
+	public static void main(String[] args) {
+		NonAcessModifierExample n = new NonAcessModifierExample();
+		n.norMethod();
+		staticcMethod(); // with in the Class
+		NonAcessModifierExample.staticcMethod(); // outside the class
+	}
+}
+
+
+Access modifiers(static and final):
+-----------------------------------
+Final:
+-------
+It is applicable to classes, methods, and variables.
+If we declare a class as final we cannot inherit that class(i.e we cannot create child class)
+If we declare a method as final we cannot override that method.
+If we declare a variable as final we must do the intialization we cannot change the value.
+
+Syntax:
+========
+Final class
+............
+final class classname{
+
+}
+
+Final Method
+.............
+
+public final void methodname()
+{
+//Business Logic
+}
+
+Final variable
+.................
+final datatype variablename = value ;
+
+
+short task:
+-----------
+static method can overload? if yes how? if no why?
+static method can override? if yes how? if no why?
+protected-access modifier
+use this and super keyword in static method.
