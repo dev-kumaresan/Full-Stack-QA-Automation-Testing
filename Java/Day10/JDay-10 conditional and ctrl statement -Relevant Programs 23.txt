@@ -1,0 +1,178 @@
+Armstrong Number Example
+153: 1(3) + 5(3) + 3(3) = 1 + 125+ 27 = 153
+125: 1(3) + 2(3) + 5(3) = 1 + 8 + 125 = 134 (Not an Armstrong Number)
+============================
+In fibonacci series, next number is the sum of previous two numbers 
+for example 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 etc. 
+The first two numbers of fibonacci series are 0 and 1.   0 1 1 2 3 5
+=============================
+Factorial Program in Java: Factorial of n is the product of all positive descending integers.
+example
+1*1=1
+1*2=2
+2*3=6
+6*4=24
+24*5=120
+===============================
+Palindrome number in java: A palindrome number is a number that is same after reverse. 
+For example 
+545, 151, 34543, 343, 171, 48984 are the palindrome numbers. 
+It can also be a string like LOL, MADAM etc.
+=================================
+Prime number in Java: Prime number is a number that is greater than 1 and divided by 1 or itself only. 
+In other words, prime numbers can't be divided by other numbers than itself or 1. 
+For example 2, 3, 5, 7, 11, 13, 17.... are the prime numbers.
+==================================
+
+
+Programming class:
+===================
+
+1.Odd or Even:
+-----------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int a = 11;
+		if (a % 2 == 0) {
+			System.out.println("Even number");
+		} else {
+			System.out.println("Odd num");
+		}
+	}
+}
+
+2.print 1 to 100 Even number:
+---------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 100; i++) {
+			if (i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+	}
+}
+
+3.print 1 to 10 odd number:
+-----------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++) {
+			if (i % 2 == 1) {
+				System.out.println(i);
+			}
+		}
+	}
+}
+
+4.Factorial number from 1 to 5:
+----------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int fact = 1;
+		for (int i = 1; i <= 5; i++) {
+			fact = fact * i;                    // 1*1=1;1*2=2;2*3=6;6*4=24;24*5=120
+		}
+		System.out.println(fact);
+	}
+}
+
+fact=1*1=1---- 1st iteration
+fact=1*2=2---- 2nd
+fact=2*3=6----3
+fact=6*4=24
+fact=24*5= 120
+
+5.Even number count from 1 to 100:
+------------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int count = 0;
+		for (int i = 1; i <= 100; i++) {
+			if (i % 2 == 0) {
+				count = count + 1;   // 0+1=1;1+1=2;2+1=3;3+1=4;4+1=5
+			}
+		}
+		System.out.println(count);
+
+	}
+}
+
+6.Odd number count from 1 to 1000:
+--------------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int count = 0;
+		for (int i = 1; i <= 1000; i++) {
+			if (i % 2 == 1) {
+				count = count + 1;
+			}
+		}
+		System.out.println(count);
+
+	}
+}
+
+7.Sum of Even number from 1 to 500:
+----------------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int count = 0;
+		for (int i = 1; i <= 500; i++) {
+			if (i % 2 == 0) {
+				count = count + i;   0+2=2;2+4=6;6+6=12;12+8=20
+			}
+		}
+		System.out.println(count);
+
+	}
+  }
+
+8.Sum of Odd number from 1 to 100:
+--------------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int count = 0;
+		for (int i = 1; i <= 100; i++) {
+			if (i % 2 == 1) {
+				count = count + i;   //0+1=1;1+3=4;4+5=9
+			}
+		}
+		System.out.println(count);
+
+	}
+}
+
+9.Sum of the number from 1 to 600:
+----------------------------------
+package org.test;
+
+public class Employee {
+	public static void main(String[] args) {
+		int count = 0;
+		for (int i = 1; i <= 600; i++) {
+			count = count + i;
+		}
+		System.out.println(count);
+
+	}
+}
+
