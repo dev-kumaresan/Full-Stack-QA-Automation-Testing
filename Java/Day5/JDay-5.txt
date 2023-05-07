@@ -1,0 +1,307 @@
+Scanner class
+==============
+Scanner Class is used to get the input from the user at the run time.
+It is present in package java.util[utility].
+
+ScannerMethods
+--------------
+
+Method		          Description
+-------------------------------------------------------------
+nextBoolean()	        Reads a boolean value from the user
+nextByte()		Reads a byte value from the user
+nextShort()		Reads a short value from the user
+nextInt()		Reads a int value from the user
+nextLong()		Reads a long value from the user
+nextFloat()		Reads a float value from the user
+nextDouble()		Reads a double value from the user
+
+nextLine()		Reads a String value from the user
+next()			Reads a String value from the user
+
+SYNTAX:
+-------------
+
+Scanner referencename=new Scanner(System.in);
+
+eg:-
+
+    Scanner myObj = new Scanner(System.in);
+
+Method Calling:
+---------------
+refName.Scannermethods();
+
+Ex program:
+...........
+next Int:
+--------
+
+
+nextLine();
+-----------
+
+
+next();
+-------
+package org.scanner;
+
+import java.util.Scanner;
+
+public class ScannerExample {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your Name");
+		String data = s.next();
+		System.out.println("Confirm your name:" + data);
+
+	}
+
+}
+============================================================================================
+OOPS CONCEPT
+-------------
+
+OOPs (Object-Oriented Programming System)
+
+Everything considered to be an object.
+
+Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
+It simplifies software development and maintenance by providing some concepts:
+
+•	Object
+•	Class
+•	Inheritance
+•	Polymorphism
+•	Abstraction
+•	Encapsulation
+
+
+OBJECT
+-------
+Any entity that has state and behavior is known as an object.   
+object is an instance of the class.
+super class of java.
+
+CLASS
+------
+Class is a blueprint or template.
+Collection of objects is called class.
+
+INHERITANCE
+-----------
+-Inheritance is a mechanism in which one class acquires the property of another class.
+
+-We can access one class property from another class.
+
+-When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. 
+
+-It provides code reusability. 
+
+-Memory wastage is low.
+
+-It is used to achieve runtime polymorphism.
+
+
+Important terminology:     super class/parent class/base class/====== sub class/child clas/derived class
+=======================
+
+Super Class:
+-------------
+ The class whose features are inherited is known as superclass(or a base class or a parent class).
+
+Sub Class:
+-----------
+ The class that inherits the other class is known as a subclass(or a derived class, extended class, or child class). 
+
+  The subclass can add its own fields and methods in addition to the superclass fields and methods.
+
+Reusability:
+------------
+ Inheritance supports the concept of “reusability”,  i.e. when we want to create a new class and there is already a class that includes some of the code that we want,
+ we can derive our new class from the existing class. 
+
+SYNTAX:
+...........
+
+class derived-class extends base-class  
+{  
+   //methods and fields  
+}  
+
+
+TYPES OF INHERITANCE:
+=====================
+
+SINGLE INHERITANCE
+MULTILEVEL INHERITANCE
+HIERARCHIAL INHERITANCE
+MULTIPLE INHERITANCE
+HYBRID INHERITANCE
+
+SINGLE INHERITANCE:
+-------------------
+When a class inherits another class, it is known as a single inheritance. 
+ 
+Ex Program:
+...........
+package org.inheritance;
+
+public class Father {
+	int tot_Car = 10;
+
+	public void house() {
+		System.out.println("Fathers house methhod");
+	}
+
+	public void car() {
+		System.out.println("Fathers car methhod");
+	}
+}
+
+.....
+
+package org.inheritance;
+
+public class Son extends Father {
+	public void bike() {
+		System.out.println("Sons bike methhod");
+	}
+
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.bike();
+		s.car();
+		s.house();
+		System.out.println(s.tot_Car);
+
+	}
+}
+
+-----------------------------------------------end-----------------------------------------------------------------
+MULTILEVEL INHERITANCE:
+When there is a chain of inheritance, it is known as multilevel inheritance. 
+
+Ex Program:
+...........
+
+package org.inheritance;
+
+public class Student {
+	public void stdentNames() {
+		System.out.println("12 Students");
+	}
+
+	public void smallTask() {
+		System.out.println("Small Task");
+	}
+
+	public void weeklyTask() {
+		System.out.println("Weekly Task");
+	}
+
+}
+.........
+
+package org.inheritance;
+
+public class Trainer extends Student {
+	public void taskValidation() {
+		System.out.println("Task Validation");
+	}
+
+	public void Evaluation() {
+		System.out.println("Evaluation");
+	}
+
+	public static void main(String[] args) {
+		Trainer t = new Trainer();
+		t.stdentNames();
+		t.weeklyTask();
+		t.taskValidation();
+	}
+}
+.....................
+
+package org.inheritance;
+
+public class Aiite extends Trainer {
+	public void mainEvalution() {
+		System.out.println("AiiTes Main Evaluation");
+	}
+
+	public static void main(String[] args) {
+		Aiite a = new Aiite();
+		a.mainEvalution();
+		a.smallTask();
+		a.Evaluation();
+	}
+}
+
+----------------------------------------------------end------------------------------------------------
+
+HIERARCHIAL INHERITANCE:
+------------------------
+When two or more classes inherits a single class, it is known as hierarchical inheritance.
+Ex Program:
+..........
+package org.inheritance;
+
+public class InterviewPreparation {
+	int tot_stu = 100;
+
+	public void javaQuestion() {
+		System.out.println("Only Java Interview Questions");
+	}
+
+	public void seleniumQuestion() {
+		System.out.println("Only Java Interview Questions");
+	}
+
+}
+............
+
+package org.inheritance;
+
+public class JavaPreparation extends InterviewPreparation {
+	int jstudent = 50;
+
+	public void javaStudent() {
+		System.out.println("Java Class Student");
+	}
+
+	public static void main(String[] args) {
+		JavaPreparation jp = new JavaPreparation();
+		jp.javaStudent();
+		jp.javaQuestion();
+
+	}
+}
+.............
+package org.inheritance;
+
+public class SeleniumPreparation extends InterviewPreparation {
+	int selStudent = 35;
+
+	public void seleniumStudent() {
+
+		System.out.println("Java Class Student");
+	}
+
+	public static void main(String[] args) {
+		SeleniumPreparation sp = new SeleniumPreparation();
+		sp.seleniumStudent();
+		sp.seleniumQuestion();
+		System.out.println(sp.tot_stu);
+		System.out.println(sp.selStudent);
+	}
+}
+
+---------------------------------------------------------------------------------------------------
+
+MULTIPLE INHERITANCE:
+One class can inherit properties of more than one parent class.
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+HYBRID:
+Hybrid inheritance in Java is a combination of two or more types of inheritances.

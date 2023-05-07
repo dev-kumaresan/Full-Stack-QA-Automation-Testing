@@ -1,0 +1,120 @@
+CONSTRUCTOR
+===========
+•A constructor in Java is a special method that is used to initialize objects. 
+•The constructor is called when an object of a class is created.
+•It can be used to set initial values for object attributes. 
+•Every time an object is created using the new() keyword, at least one constructor is called.
+
+RULES:
+-------
+•	Constructors must have the same name as the classname.
+•	Constructors do not have any return type.
+•	Constructors are called only once at the time of Object creation.
+
+Uses of Constructor:
+--------------------
+1. It used to initialize the values at start of execution
+2. It calculates needed memory for variables and methods in class and provide information to JVM to calculation of Memory
+
+SYNTAX:
+--------
+class classname
+{   
+classname()   // A Constructor
+{
+statement ;
+}
+}
+
+Types of Constructors in Java:
+-------------------------------
+
+•No-argument constructor
+•Parameterized Constructor
+
+1. No-argument constructor:
+---------------------------
+ A constructor that has no parameter is known as the default constructor.
+ If we don’t define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class.
+And if we write a constructor with arguments or no arguments then the compiler does not create a default constructor. 
+
+2. Parameterized Constructor: 
+-----------------------------
+A constructor that has parameters is known as parameterized constructor.
+ If we want to initialize fields of the class with our own values, then use a parameterized constructor.
+
+CONSTRUCTOR OVERLOADING:
+------------------------
+Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. 
+They are arranged in a way that each constructor performs a different task.
+
+CONSTRUCTOR CHAINING:
+-----------------------
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object. 
+
+Constructor chaining can be done in two ways: 
+---------------------------------------------
+1.Within same class: It can be done using this() keyword for constructors in same class
+2.From base class: by using super() keyword to call constructor from the base class.
+
+Example Program:
+----------------
+package org.abstraction;
+
+public class ConstructorExample {
+
+	ConstructorExample() {
+		System.out.println("No argument constructor");
+
+	}
+
+	ConstructorExample(int a) {
+		System.out.println("1 argument Constructor:" + a);
+
+	}
+
+	ConstructorExample(String name, char i) {
+		System.out.println("2 argument constructor:" + name + i);
+	}
+
+	public static void main(String[] args) {
+		ConstructorExample c = new ConstructorExample();
+		ConstructorExample c1 = new ConstructorExample(4);
+		ConstructorExample c2 = new ConstructorExample("Java", 'J');
+	}
+}
+
+
+Small Task:
+-----------
+
+Chaining constructor using this keyword:
+----------------------------------------
+package org.interfaceabs.example;
+
+public class ExampleCon {
+	ExampleCon() {
+		this("java", 'j');
+		System.out.println("No-Argument Constructor");
+	}
+
+	ExampleCon(char c) {
+		System.out.println("1-Argument Constructor");
+	}
+
+	ExampleCon(String s, char c) {
+		this('j');
+		System.out.println("2-Argument Constructor");
+	}
+
+	public static void main(String[] args) {
+		ExampleCon e = new ExampleCon();
+
+	}
+}
+
+
+Chaining constructor using super keyword:
+-----------------------------------------
+Small_Task
+

@@ -1,0 +1,258 @@
+for loop:
+=========
+for(initialization;conditionchecking:incre/decrement)
+
+for(int i=0;i<=5;i++){
+syso("welcome");
+}
+
+
+
+i=0;0<=5
+welcome
+i++
+i=0+1=1    1st
+
+i=1;1<=5
+welcome
+i++
+i=1+1=2    2nd
+
+i=2;2<=5
+welcome
+i++
+i=2+1=3  3rd
+
+i=3 ; 3<=5
+welcome
+i++
+i=3+1=4
+
+
+i=4;4<=5
+welcome
+i++
+i=5
+
+i=5;5<=5
+welcome
+i++
+i=6
+
+i=6;6<=5 condition false
+
+
+
+for loop- increment
+..................
+
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		for (int i = 0; i < 5; i++) {
+			System.out.println(i);
+		}}}
+...
+for loop- decrement
+...................
+
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		for (int i = 20; i > 0; i--) {
+			System.out.println(i);
+		}}}
+
+---------------------------------------------------------------------------------
+
+Nested for loop:
+................
+for(int i=1;i<=2;i++){
+syso(outer loop);
+{
+for(int j=0;j<=1;j++){
+syso(innerloop)
+}
+}
+
+i=1;1<=2
+outerloop
+j=0;0<=1;
+innerloop
+j++
+j=0+1=1
+j=1;1<=1
+innerloop
+j++
+j=2
+j=2;2<=1 condtionfalse
+
+i++
+i=1+1=2    ..... 1st iterstion of i
+
+
+i=2;2<=2
+outerloop
+j=0;0<=1;
+innerloop
+j++
+j=0+1=1
+j=1;1<=1
+innerloop
+j++
+j=2
+j=2;2<=1 condtionfalse
+
+i++; i=2+1=3 ..... 2nd iteration
+
+
+i=3;3<=2 condition flase loop will get terminate
+
+
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		for (int i = 1; i < 3; i++) {
+			System.out.println("Outer loop");
+			for (int j = 0; j < 2; j++) {
+				System.out.println("Inner loop");
+			}
+		}
+
+	}
+
+}
+---------------------------------------------------------------------------------------
+While Loop:
+==========
+Syntax:
+-------
+while (condition) {
+
+  // code block to be executed
+
+}
+
+Example:
+--------
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		int i = 1;
+		while (i <= 10) {
+			System.out.println(i);
+			i++;
+		}}}
+
+Finding EVEN Num:
+.................
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		int i = 1;
+		while (i <= 10) {
+			if (i % 2 == 0)   // if (i%2==1) for ODD num
+				System.out.println(i);
+			i++;
+		}}}
+
+
+---------------------------------------------------------------------------------------
+
+do while:
+=========
+The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
+
+Syntax:
+-------
+do {
+
+  // code block to be executed
+
+}while (condition);
+
+Example:
+--------
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		int i = 1;
+		do {
+			System.out.println(i);
+			i = i + 1;
+		} while (i <= 5);
+	}}
+
+
+Diff b/w while and do while:
+............................
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		int i = 6;
+		do {
+			System.out.println(i);
+			i = i + 1;
+		} while (i <= 5);
+
+//		int i=6;
+//		while(i<=5) {
+//			System.out.println(i);
+//			i=i+1;
+//		}}}
+
+---------------------------------------------------------------------------------
+Jump Statement:
+...............
+break:
+------
+-Break statements in java are used to end the ongoing process.
+
+-They can be used to terminate for loops, while loops and do-while loops. 
+
+-They are also used to come out of the switch block once the matching case has been found.
+
+
+Eg:
+...
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				break;
+			System.out.println(i);
+		}}}
+
+
+
+
+
+
+Continue:
+----------
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+eg:
+...
+package org.operator;
+
+public class AssignmentOperator {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				continue;
+			System.out.println(i);
+		}}}
+
+
+
+

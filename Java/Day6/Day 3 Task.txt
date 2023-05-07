@@ -1,0 +1,157 @@
+Day3_Polymorphism,Abstraction
+
+DAY3:
+---------
+1.Polymorphism
+2.Abstraction
+
+
+QUESTIONS(Theory)
+---------------------
+1.What is mean by polymorphism?
+2.Difference between method overloading and method overriding?
+3.What is mean by Abstraction?
+4.Difference between Abstract class and interface?
+5.What is mean by abstract method?
+6.Can we create object for abstract class?
+7.In interface,can we make method as static?
+8.In interface,can we make method as final?
+9.How will achieve multiple inheritance in java,write a code for that?
+
+QUESTIONS(Programs)
+--------------------
+QUESTION 1:
+------------
+Find the answer for below questions and tell whether it is possible or not?
+A-abstract class
+C-class
+I- interface
+
+I implements I - 
+I implements C -
+I implements A - 
+I extends I - 
+I extends C - 
+I extends A - 
+
+C implements I - 
+C implements C
+C implements A
+C extends I
+C extends C 
+C extends A 
+
+A implements I
+A implements C
+A implements A
+A extends I
+A extends C
+A extends A
+
+
+QUESTION 2:
+------------
+     Project   :EmployeeDetails
+     Package   :org.emp
+     Class     :Employee 
+     Methods   :empId()
+
+Description
+You have to overload the method empId() based on different datatype in arguments.
+
+QUESTION 3:
+------------
+   Project     :CompanyDetails
+   Package     :org.company
+   Class       :CompanyInfo
+   Methods     :companyName()
+
+Description
+You have to overload the method companyName() based on different Number of arguments.
+
+QUESTION 4:
+------------
+   Project     :MyPhone
+   Package     :org.phone
+   Class       :Phone
+   Methods     :phoneInfo()
+
+Description
+You have to overload the method phoneInfo() based on different datatype order in arguments.
+
+QUESTION 5:
+-----------
+     Project   :Al-RightAddress
+     Package   :org.add
+     Class     :Al-RightTech
+     Methods   :Al-RightOmr()
+
+Description
+You have to overload the method Al-RightOmr().
+
+QUESTION 6:
+------------
+     Project   :BankDetails
+     Package   :org.bank
+     Class     :BankInfo
+     Methods   :saving(),fixed(),deposit()
+
+     Class     :AxisBank
+     Methods   :deposit()
+
+Description:
+You have to override the method deposit in AxisBank.
+
+QUESTION 7:
+------------
+     Project   :EducationInformation
+     Package   :org.edu
+     Class     :Education
+     Methods   :ug(),pg()
+
+     Class     :Arts
+     Methods   :bSc(),bEd(),bA(),bBA(),ug(),pg()
+
+Description:
+You have to override the method ug(),pg() in Arts.
+
+QUESTION 8:
+------------
+     Project   :UniversityInformation
+     Package   :org.univ
+     Class     :University
+     Methods   :ug(),pg()
+
+     Class     :College
+     Methods   :ug(),pg()
+
+Description:
+ug(),pg() is just a templete in University class and You have to override the method ug(),pg() in College class.
+
+QUESTION 9:
+------------
+     Project   :BikeInformation
+     Package   :org.bike
+     Interface :Bike
+     Methods   :cost(),speed()
+
+     Class     :Ktm
+     Methods   :cost(),speed()
+
+Description:
+cost(),speed() is just a templete in Bike Interface and You have to override the method cost(),speed() in Ktm class.
+
+QUESTION 10:
+-------------
+     Project   :Computer
+     Interface :HardWare
+     Methods   :hardwareResources()
+
+     Interface :Software
+     Methods   :softwareResources()
+
+     Class     :Desktop
+     Methods   :desktopModel()
+
+Description:
+create 2 Interface and archieve multiple inheritance.
