@@ -27,7 +27,7 @@ public class PlayWithWords {
 		System.out.println(us); // with space
 		System.out.println(statement.substring(4)); // returns string
 		System.out.println(statement.substring(10, 22)); // returns string
-		System.out.println(statement.concat(academy));
+		System.out.println(statement.concat(academy)); // returns string
 
 	}
 
