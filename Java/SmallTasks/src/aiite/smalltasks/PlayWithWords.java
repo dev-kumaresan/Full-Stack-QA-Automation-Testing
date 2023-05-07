@@ -3,7 +3,7 @@ package aiite.smalltasks;
 public class PlayWithWords {
 	public static void main(String[] args) {
 		String statement = "kumaresan from batch-3", name = "KUMARESAN", name2 = "kumaresan", empty = "", blank = " ",
-				us = "   unwanted";
+				us = "   unwanted", academy = " in aiite";
 
 		System.out.println(name.startsWith("k")); // returns boolean
 		System.out.println(name.endsWith("n")); // returns boolean
@@ -27,6 +27,7 @@ public class PlayWithWords {
 		System.out.println(us); // with space
 		System.out.println(statement.substring(4)); // returns string
 		System.out.println(statement.substring(10, 22)); // returns string
+		System.out.println(statement.concat(academy));
 
 	}
 
