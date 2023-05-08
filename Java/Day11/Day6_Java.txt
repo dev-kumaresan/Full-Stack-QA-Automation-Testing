@@ -1,0 +1,442 @@
+DAY6:
+-----
+1.String functions
+2.Literal String
+3.Non Literal String
+4.Mutable String
+5.Immutable String
+
+
+
+
+QUESTIONS(Theory)
+-------------------
+1.What is mean by string?
+2.How to find length of the string?
+3.How to find partcular character in string?
+4.How to split the string?
+5.What is difference between literal String and non literal string?
+6.What is mutable and immutable string?
+7.Difference between stringbulider and stringbuffer?
+8.Method name to identify memory location?
+9.What are the string functions available in java?
+10.What is difference between charAt() and contains() method?
+11.What is the return type of compareTo()
+12.Where the Literal String and non literal String stores?
+13.What is mean by ASCII value?
+
+QUESTIONS(Programs)
+------------------------------
+QUESTION 1:
+-----------
+Description: Find the length of the below string
+   String 1: AlRightTechnology
+   String 2: SeleniumAutomationtool
+   String 3: shahul
+   String 4: j a v a p r o g r a m
+   String 5: 9095484678
+
+QUESTION 2:
+-----------
+Description: Find the particular character index  in the given string
+   String 1: AlRightTechnology 
+             Find the last index of o
+
+   String 2: SeleniumAutomationtool 
+             Find the index of o
+
+   String 3: shahul 
+             Find the index of n
+
+   String 4: j a v a p r o g r a m 
+             Find the last index of  (emptyspace)
+
+   String 5: 9095484678 
+             Find the index of 8
+
+Question 3:
+-----------
+Description: Find the particular character in the given string
+   String 1: AlRightTechnology 
+             print the character h 
+
+   String 2: SeleniumAutomationtool 
+             print the character o
+
+   String 3: shahul 
+             print the character u
+
+   String 4: j a v a p r o g r a m 
+             print the character p
+
+   String 5: 9095484678
+             print the character 7
+            
+QUESTION 4:
+-----------
+Description : Get two input from user and check the equality
+            : print in the output whether it is Equal or not
+Example:
+--------
+Input : 
+String 1 : Java
+String 2 : Java
+
+Example:
+---------
+Input : 
+String 1 : Java
+String 2 : java
+
+Example:
+---------
+Input : 
+String 1 : Aiite Technology
+String 2 : AiiteTechnology.
+
+Example(use equalsIgnoreCase):
+---------
+Input : 
+String 1 : Java
+String 2 : java
+
+Example(use equalsIgnoreCase) :
+---------
+Input : 
+String 1 : Nisha
+String 2 : nisha
+
+QUESTION 5:
+------------
+QUESTION 5.1:
+------------
+Description: Get the email id from the user and verify '@' is present or not?
+
+Example:
+------------
+Input  = shahulk451@gmail.com
+Output = valid email id
+
+QUESTION 5.2:
+------------
+Description:Get the address from the user and verify "pincode" is present or not?
+
+Example:
+------------
+Input  = 5-35-2a,venkatesh nivas,Aruppukottai
+Output = invalid address
+
+QUESTION 5.3:
+------------
+Description:Get the email from the user and verify '@' is present or not and return true or false?
+
+Example:
+------------
+Input  = YuvarajSekar12@gmail.com
+Output = True/False 
+
+QUESTION 5.4:
+------------
+Description:Get the phonenumber from the user and verify any character is present or not .
+            If character is present return invalid number
+
+Example:
+------------
+Input  = 90954a6o78
+Output = False
+
+QUESTION 6:
+-----------
+Description:Get the phonenumber from the user  .
+            If phonenumber exceeds greater than 10 then return invalid number
+
+Example:
+--------
+Input  = 89034256972365
+output = invalid
+Example 2:
+---------
+Input  = 9095484678
+Output = valid 
+
+QUESTION 7:
+------------
+QUESTION 7.1:
+-------------
+Description:Given string as "Welcome to java class" and replace java into sql.
+
+Example:
+-----------
+Input  = Welcome to class java
+output = Welcome to class sql
+
+QUESTION 7.2:
+-------------
+Description:Given string as "AlRight Adayar"and replace Adayar into Omr.
+
+Example:
+-----------
+Input  = AlRight Adayar
+Output = AlRight Omr
+
+QUESTION 7.3:
+-------------
+Description: Given String as "Welcome to java class" and Replace space into '#'
+
+Example:
+----------
+input:Welcome to java class
+output:Welcome#to#java#class
+
+
+QUESTION 7.4:
+------------
+Description:Get the email from the user and verify "gmail" is present or not.
+            If present replace that gmail into yahoo
+
+Example:
+------------
+Input  = YuvarajSekar12@gmail.com
+Output = YuvarajSekar12@yahoo.com 
+
+QUESTION 7.5:
+------------
+Description:Get the address from the user and verify "pincode" is present or not.
+            If present replce the pincode with empty space
+
+Example:
+------------
+Input  = 5-35-2a,venkatesh nivas,Aruppukottai,pincode-626101
+Output = 5-35-2a,venkatesh nivas,Aruppukottai 
+
+QUESTION 8
+----------
+QUESTION 8.1
+-------------
+Description:Get the input from the user and print that word in lowercase
+
+Example:
+--------
+Input  = NISHANTHI
+Output = nishanthi
+
+QUESTION 8.2
+-------------
+Description:Get the input from the user and print that word in Uppercase
+
+Example:
+--------
+Input  = nishanthi
+Output = NISHANTHI
+
+QUESTION 8.3
+---------------
+Description:Convert all small letter and into capital letter
+
+Example:
+----------
+Input  = WelcomE
+Output = wELCOMe
+
+QUESTION 8.4
+--------------
+Description:Find the number of uppercase count and lowercase count in the given String
+
+Example:
+--------
+Input = WelComeToJava
+Output:
+-------
+UpperCase=4
+LowerCase=9
+
+QUESTION 9
+------------
+QUESTION 9.1
+--------------
+Description: Given String as "Welcome to java class" and verify whether the given string startsWith welcome
+
+Example:
+-----------
+Input  = Welcome to class java
+output = True
+
+
+QUESTION 9.2
+--------------
+Description: Given String as "Hai i am nisha" and verify whether the given string startsWith welcome
+
+Example:
+-----------
+Input  = Hai i am nisha
+output = False
+
+
+QUESTION 9.3
+--------------
+Description: Given String as "Welcome to java class" and verify whether the given string endsWith class
+
+Example:
+-----------
+Input  = Welcome to java class
+output = True
+
+QUESTION 9.4
+--------------
+Description: Given String as "Welcome to java class" and verify whether the given string endsWith java
+
+Example:
+-----------
+Input  = Welcome to java class
+output = False
+
+QUESTION 9.5
+--------------
+Description: Given String as "Welcome to java class" and verify whether the string is empty or not
+
+Example:
+-----------
+Input  = Welcome to java class
+output = False
+
+QUESTION 9.6
+--------------
+Description: Given String as "" and verify whether the string is empty or not
+
+Example:
+-----------
+Input  = ""
+Output = False
+
+QUESTION 10
+-----------
+Description : Get two input from user and Compare 
+
+Example
+---------
+String 1 : Nisha
+String 2 : nisha
+
+Example
+---------
+String 1 : Nia
+String 2 : nisha
+
+QUESTION 11
+------------
+QUESTION 11.1
+---------------
+Description : Generate the two literal string and find the identityHashCose()
+
+Example
+---------
+String 1 : Nisha
+String 2 : Nisha
+
+QUESTION 11.2
+---------------
+Description : Generate the two non literal string and find the identityHashCose()
+
+Example
+---------
+String 1 : Nisha
+String 2 : Nisha
+
+QUESTION 11.3
+---------------
+Description : Generate the three non literal string and find the identityHashCose()
+
+Example
+---------
+String 1 : Nisha
+String 2 : Rengan
+String 3 : NishaRengan
+
+QUESTION 11.4
+---------------
+Description : Generate the three literal string and find the identityHashCose()
+
+Example
+---------
+String 1 : Nisha
+String 2 : Rengan
+String 3 : NishaRengan
+
+QUESTION 12
+------------
+QUESTION 12.1
+--------------
+Description: Given String as "Welcome to java class" and split it by space.
+
+Example:
+--------
+Input :Welcome to java class 
+Output:
+-------
+Welcome
+to
+java
+class
+
+QUESTION 12.2
+--------------
+Description: Given String as "Welcome to java class" and split it by l 
+
+Example:
+--------
+Input :Welcome to java class 
+Output:
+-------
+We
+come to java c
+ass
+
+QUESTION 13
+------------
+QUESTION 13.1
+--------------
+Description: Given String as "Welcome to java class" and generate a substring.
+
+Example:
+--------
+Input :Welcome to java class 
+Output:
+-------
+Welcome
+
+QUESTION 14
+-----------
+Example:
+-----------
+Description: Given String as "Welcome" and the number of consonant count and vowels count
+
+Example:
+---------
+Input  = Welcome
+output:
+-------
+vowels    = 3
+consonant = 4
+
+QUESTION 15:
+------------
+Description: Find the count of caps,small,number and special character in given string
+
+Example:
+-----------
+Input : Welcome To Java class @123
+Output
+------
+caps count  :3
+small count :15
+number count:3
+Special char:5
+
+QUESTION 16
+------------
+Description: Replace all vowels char into '@'
+
+Example:
+----------
+Input  = Welcome
+Output = W@lc@m@  

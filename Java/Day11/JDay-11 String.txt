@@ -1,0 +1,194 @@
+STRING:
+=======
+•String is a non premitive datatype.(act as a class and also a datatype)
+
+•String is a sequence of characters. But in Java, string is an object that represents a sequence of characters.
+
+•String enclosed with double quotes and works on the principal of index basis.(starts from 0 to n-1).
+
+•String is class and it is in java.lang package
+Additionally most of predefined methods and classes in java are from java.lang hence
+explicit import does not happen.
+
+•The java.lang.String class is used to create a string object.
+
+•String values are stored in String Constant Pool(SCP).SCP is a type of memory which is shared by heap memory.
+
+•String is literal and Immutable.
+
+There are two ways to create String object:     sorry guys in important office call give me 2 mins
+-------------------------------------------
+•By string literal
+•By new keyword
+
+String literal:
+***************
+Java String literal is created by using double quotes. 
+For Example:
+.............
+String s="welcome";  
+
+Each time you create a string literal, the JVM checks the "string constant pool" first.
+If the string already exists in the pool, a reference to the pooled instance is returned. 
+
+If the string doesn't exist in the pool, a new string instance is created and placed in the pool.
+For example:
+............
+String s1="Welcome";  
+String s2="Welcome";//It doesn't create a new instance  
+
+By new Keyword:
+***************
+String s=new String("Welcome");//It creates a new instance .
+
+The string can also be declared using new operator i.e. dynamically allocated.
+In case of String are dynamically allocated they are assigned a new memory location in heap. This string will not be added to String constant pool.
+
+Example program for String literal:
+-----------------------------------
+package org.string.methods;
+
+public class StringMethods {
+	public static void main(String[] args) {
+		String s = "welcome"; // String Literal
+		String s1 = "welcome";
+		String s2 = "Java";
+		String s3 = "Java";
+
+		System.out.println(s.hashCode());
+		System.out.println(s1.hashCode());
+
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
+	}
+
+}
+
+
+STRING METHODS
+===============    
+toUpperCase() -
+toLowerCase() -
+StartsWith()
+endsWith()
+indexOf() 
+lastIndexOf()
+equals()
+equalsIgnoreCase()
+length()
+contains()
+concat()
+charAt()
+toCharArray() -  pending
+replace()
+isEmpty()
+isBlank()
+split()  - pending
+trim()
+subString()
+
+package org.string;
+
+public class StringConcepts {
+	public static void main(String[] args) {
+		String s = "march Batch Three"; // Literal string
+		String s1 = "Students";
+		String s3 = " ";
+
+		int length = s.length();
+		System.out.println(length);
+
+		String upper = s.toUpperCase();
+		System.out.println(upper);
+
+		String lower = s1.toLowerCase();
+		System.out.println(lower);
+
+		System.out.println(s.startsWith("m"));
+		System.out.println(s.endsWith("e"));
+
+		System.out.println(s.indexOf('a')); // left to right
+
+		System.out.println(s.lastIndexOf('a')); // right to left
+
+		System.out.println(s.equals(s1));
+
+		System.out.println(s.equalsIgnoreCase(s)); // will not consider upper and lower cases
+
+		System.out.println(s.contains("march"));
+
+		String concat = s.concat(s1);
+		System.out.println(concat);
+
+		char charAt = s.charAt(7);
+		System.out.println(charAt);
+
+		System.out.println(s.replace("march", "may"));
+
+		System.out.println(s3.isEmpty());// it'll consider space
+
+		System.out.println(s3.isBlank()); // it doesnt consider space
+
+		System.out.println(s);
+		System.out.println(s.trim()); // will remove unwanted space
+
+		System.out.println(s.substring(3));
+		System.out.println(s.substring(3, 10));
+
+	}
+
+}
+
+Immutable String:
+----------------
+-A string is an immutable object which means we cannot change them after creating the objects. Whenever we change any string, a new instance is created.
+
+-Immutable refers to something that cannot be changed or modified. Hence, immutable objects are ones that cannot be modified after they have been created. 
+This is an object whose internal state does not change after it has been created completely.
+
+String Builder and String Buffer:(Immutable to Mutable String)
+=================================================================
+
+package org.string;
+
+public class MutableString {
+	public void immutableString() {
+		System.out.println("Immutable String:");
+		String s = "March Batch";
+		String s1 = "Three";
+		System.out.println(s.hashCode());
+		String concat = s.concat(s1);
+		System.out.println(concat.hashCode());
+
+	}
+
+	public void mutableString() {
+		System.out.println("---------------------");
+		System.out.println("Mutable String:");
+		StringBuffer sb = new StringBuffer("March Batch");
+		System.out.println(sb.hashCode());
+		System.out.println(sb.append("Three"));
+		System.out.println(sb.hashCode());
+		System.out.println(sb.deleteCharAt(2));
+		System.out.println(sb.insert(2, 'r'));
+		System.out.println(sb.replace(0, 4, "MAY"));
+
+	}
+
+	public static void main(String[] args) {
+		MutableString ms = new MutableString();
+		ms.immutableString();
+		ms.mutableString();
+	}
+}
+
+Points to remember:
+-------------------
+
+- String is immutable whereas StringBuffer and StringBuilder are mutable classes.
+   
+- StringBuffer is thread-safe and synchronized whereas StringBuilder is not. That’s why StringBuilder is faster than StringBuffer.
+ 
+-String concatenation operator (+) internally uses StringBuffer or StringBuilder class.
+   
+-For String manipulations in a non-multi threaded environment, we should use StringBuilder else use StringBuffer class.
