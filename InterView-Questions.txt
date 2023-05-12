@@ -1,0 +1,76 @@
+Luxsoft 
+1. Explain about your framework and roles and activities
+2. Explain what api tool used in project
+3. Write a query to fetch the seconnd lowest employee from the table
+4. write a prime num program 
+5. what motivates you to join in luxsoft, what do u know about us
+6. how to handle dynamic xpath - axes xpath
+7. why u choose ur carrer into qa
+8. Intersting bug you found so far
+9. how you will do the parrallel testing
+10. write a logic for this
+12
+1212
+121212
+12121212
+1212121212
+Program:-
+int n = 5;  // Number of rows
+
+for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+        if (j % 2 == 0) {
+            System.out.print("2");
+        } else {
+            System.out.print("1");
+        }
+    }
+    System.out.println();
+}
+
+
+Photon
+
+1. write the try, catch , finally block to handle the exception
+2. write the feature file components in note pad and explain
+3. write the testng annotation sequence and explain
+4. what are the annotation available in cucumber
+5. why you think bdd framework is familliar in the market
+6. BDD vs TDD
+7. how you will handle if you missed your timeline for testing
+8. write the syntax how will to read the excel file 
+9. write the syntax of taking the screenshot
+10. write the steps which is required to create a bug in jira
+
+
+
+Verizon
+1. tell me about yourself
+2. explain your application what exactly it will do
+3. Scenario: consider u are downloading a file using selenium commands how u will rename the downloaded file. - we can integrate the Auto It tool for window based actions
+4. different ways to upload a files
+5. how u will configure jenkins
+6. how many team memebers in your team 
+7. String name = "TestinG"; count the upper and lower case count in online compiler
+8. int a [] ={10,20,30,40,50} - rotate the arrays 
+o/p - 
+50,10,20,30,40 
+40,50,10,20,30
+30,40,50,10,20
+20,30,40,50,10
+10,20,30,40,50
+Program :-
+int[] arr = {10, 20, 30, 40, 50};
+
+for (int i = 0; i < arr.length; i++) {
+    int temp = arr[arr.length - 1];
+    for (int j = arr.length - 1; j > 0; j--) {
+        arr[j] = arr[j - 1];
+    }
+    arr[0] = temp;
+    
+    for (int num : arr) {
+        System.out.print(num + " ");
+    }
+    System.out.println();
+}
