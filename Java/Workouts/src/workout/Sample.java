@@ -6,15 +6,13 @@ public class Sample {
 		c = a + b;
 		System.out.println(c);
 	}
-
-	private Sample() {
-		this(1, 2);
-		System.out.println("This is constructor with private");
+	public Sample(int a,int b,int c)
+	{
+		this(a,b);
+		
 	}
 
-	public static void main(String[] args) {
-		Sample ob = new Sample();
 
-	}
+	
 
 }
