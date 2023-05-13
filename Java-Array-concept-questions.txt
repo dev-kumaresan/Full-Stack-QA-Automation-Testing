@@ -1,5 +1,5 @@
 SET-1:
-1. Sum of Array Elements: Write a program that calculates the sum of all elements in an array of integers.
+1. Sum of Array Elements: Write a program that calculates the sum of all elements in an array of integers..
 
 2. Maximum Element: Write a program that finds the maximum element in an array of integers.
 
