@@ -1,0 +1,166 @@
+Array:
+======
+Array is an object which contains elements of a similar data type(Homegenious data).
+
+We can store multiple data in a single variable.
+
+The elements of an array are stored in a contiguous memory location.
+
+We can store only a fixed set of elements in a Java array.
+
+Array works on index basis.
+
+There are two types of array:
+-----------------------------
+1.Single Dimensional Array
+2.Multidimensional Array
+
+Single Dimensional Array:
+.........................
+Standard Array:   
+data_type  variable_name[]=new  data_type[size];
+ex: int a[]=new int[5];
+
+3-ways:
+.......
+int  a[]; // commenly used.
+int[]  b;
+int  []c;
+
+Dynamic Array:
+data_type  variable_name[]={size};
+ex:
+int a[]={10,20,30};
+
+Example Program-Standard Array:-
+-----------------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		int a[] = new int[5]; // Standard array
+		a[0] = 35;
+		a[1] = 98;
+		a[2] = 54;
+		a[3] = 66;
+		a[4] = 99;
+
+		// System.out.println(a[4]);
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+
+Dynamic Array
+--------------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+
+		int a[] = { 10, 20, 30, 40, 55, 67, 29, 90 }; // Dynamic Array
+		// System.out.println(a[2]);
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+
+Multidimensional Array:
+
+........................
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+
+		int a[][] = new int[3][3];
+
+		a[0][0] = 100;
+		a[0][1] = 200;
+		a[0][2] = 300;
+
+		a[1][0] = 400;
+		a[1][1] = 500;
+		a[1][2] = 600;
+
+		a[2][0] = 700;
+		a[2][1] = 800;
+		a[2][2] = 900;
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a.length; j++) {
+				System.out.println(a[i][j]);
+			}
+		}
+
+	}
+
+}
+
+Disadvantages:
+---------------
+The Java array needs to be declared with a given array.
+The size of the array in Java also cannot be increased or decreased.
+As per the definition of arrays, they can only store data of a single type.
+If arrays of a larger size than is required are declared, the memory may be wasted.
+
+Object Array:
+--------------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+
+		Object a[] = new Object[5];
+		a[0] = 23;
+		a[1] = "java";
+		a[2] = 'j';
+		a[3] = 7.8f;
+		a[4] = 1;
+	}
+
+}
+
+
+
+
+String pending methods:
+-----------------------
+toChararray:
+------------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		String s = "March Batch Three";
+		char[] a = s.toCharArray();
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+
+split:
+-------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		String s = "March Batch Three Students";
+		String[] a = s.split(" ");
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}

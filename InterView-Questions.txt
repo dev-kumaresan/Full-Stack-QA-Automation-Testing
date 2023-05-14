@@ -74,3 +74,44 @@ for (int i = 0; i < arr.length; i++) {
     }
     System.out.println();
 }
+
+
+
+
+Cognizant Round-1
+1.	Self Intro
+2.	What are the tools you are using in your project.
+3.	Explain about your project
+4.	Explain about the framework
+5.	Explain about Postman
+6.	Do you have experience in restAssured.
+7.	Where you will use OOPs and Collections concept in your project
+8.	Difference between Inheritance and Data Abstraction in your project.
+9.	write a program for design patten
+1
+12
+123
+public class PatternExample {
+    public static void main(String[] args) {
+        int num = 1;
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num);
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+10.	How to reverse a String (Don't use String method)
+11.	How to reverse a String without Main method
+12.	Selenium scenarios- 
+13.	What is meant by Xpath axes.
+14.	What are the types of Xpath axes.
+15.	Where you will use the xpath axes .
+16.	Actions moveToElement concept, asked to write in the notepad.
+17.	 Given a scenario and asked to write in the notepad. (Dropdown for Date is available, some dates are not visible but you need a particular date which is not available, how you will check and get the Date which you want).
+18.	How to switch to multiple window -write it in a notepad.
+19.	4 tab are there, how to switch to the fourth Tab
+20.	Any Questions you have.
