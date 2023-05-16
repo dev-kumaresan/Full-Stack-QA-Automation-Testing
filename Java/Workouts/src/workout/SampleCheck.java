@@ -8,6 +8,8 @@ public class SampleCheck extends Sample {
 	public static void main(String[] args) {
 		SampleCheck sc = new SampleCheck();
 		
+		
+		
 	}
 
 }

@@ -1,6 +1,6 @@
 package workout;
-
 import java.util.Scanner;
+
 
 public class MaxAndMin {
 
@@ -25,6 +25,8 @@ public class MaxAndMin {
 		}
 		System.out.println("Max number : " + max);
 		System.out.println("Min number : " + min);
+
+
 
 	}
 
