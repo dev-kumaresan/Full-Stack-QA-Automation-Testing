@@ -1,0 +1,119 @@
+Type Casting:
+.............
+Type casting is a method or process "that converts a data type into another data type in both ways manually and automatically. 
+The automatic conversion is done by the compiler and manual conversion performed by the programmer.
+
+Two types of casting:
+....................
+
+1.Widening Casting (automatically) - converting a smaller type to a larger type size.
+-----------------   
+
+byte -> short -> char -> int -> long -> float -> double.
+
+Example Program:
+================
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		int a = 35;
+		float b = a;
+		System.out.println(a);
+		System.out.println(b);
+
+	}
+}
+
+2.Narrowing Casting (manually) - converting a larger type to a smaller size type.
+------------------
+
+=>Narrowing casting must be done manually by placing the type in parentheses in front of the value
+
+double -> float -> long -> int -> char -> short -> byte.
+
+Example Program:
+===============
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		double d = 567.34;
+		int e = (int) d;
+		System.out.println(d);
+		System.out.println(e);
+
+	}
+}
+
+
+Wrapper Class- parseInt and valueOf:
+=====================================
+The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+
+Convert String to int:
+----------------------
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		String a = "10";
+		String b = "70";
+		// System.out.println(a + b);
+		int d1 = Integer.parseInt(a);
+		int d2 = Integer.parseInt(b);
+		System.out.println(d1 + d2);
+
+	}
+}
+
+Convert int to String:
+----------------------
+
+package org.array;
+
+public class ArrayEx {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 50;
+		String d1 = String.valueOf(a);
+		String d2 = String.valueOf(b);
+		System.out.println(d1 + d2);
+
+	}
+}
+
+Main Method Explanation:
+========================
+
+The main() is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program. 
+
+The syntax of the main() method is:
+
+public static void main(String[] args)
+
+public:
+-------
+It is an access specifier. We should use a public keyword before the main() method so that JVM can identify the execution point of the program.
+
+If we use private, protected, and default before the main() method, it will not be visible to JVM.
+
+static:
+-------
+You can make a method static by using the keyword static. We should call the main() method without creating an object.
+
+Static methods are the method which invokes without creating the objects, so we do not need any object to call the main() method.
+
+void: In Java, every method has the return type. Void keyword acknowledges the compiler that main() method does not return any value.
+
+main(): 
+-------
+It is a default signature which is predefined in the JVM.
+
+It is called by JVM to execute a program line by line and end the execution after completion of this method.
+
+String args[]:
+--------------
+The main() method also accepts some data from the user. It accepts a group of strings, which is called a string array.
+
+Values passed to the main() method is called arguments. These arguments are stored into args[] array, so the name args[] is generally used for it.
