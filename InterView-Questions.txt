@@ -115,3 +115,32 @@ public class PatternExample {
 18.	How to switch to multiple window -write it in a notepad.
 19.	4 tab are there, how to switch to the fourth Tab
 20.	Any Questions you have.
+
+
+
+Java/Selenium interview Questions :-
+Java/Selenium Interview questions 
+1.	What are oops concept in Java.
+2.	What is the difference between Abstraction and Encapsulation.
+3.	What is difference between Abstract Class and Interface.
+4.	WAP to reverse a string/number.
+5.	WAP to remove all the special characters from a string and print only alphanumeric characters.
+6.	WAP to check if number/string is palindrome.
+7.	WAP to determine a number as Prime Number.
+8.	WAP to count occurrence of each character in a string.
+9.	WAP to reverse a string 
+a.	Example 
+i.	Input : Deepak Kumar
+ii.	Output : Kumar Deepak
+b.	Example
+i.	Input : Deepak Kumar
+ii.	Output : ramuk kapeed 
+c.	Example
+i.	Input : Deepak Kumar
+ii.	Output : kapeed ramuk
+10.	What are components of Selenium.
+11.	What is the difference between Selenium 3 and Selenium 4.
+12.	What are exceptions in selenium java.
+13.	What are the different frameworks in Selenium Java.
+14.	How will read/write data in JSON file in selenium Java.
+15.	Can you design a framework from scratch?.
