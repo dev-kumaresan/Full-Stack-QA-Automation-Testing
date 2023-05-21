@@ -20,6 +20,8 @@ public class SignChanger {
 			value = value + (-value * 2);   // -5+(-(-5)*2)
 			System.out.println(value);
 		}
+		
+		
 	}
 
 	public static void main(String[] args) {
