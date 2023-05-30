@@ -28,6 +28,7 @@ public class Exceptionhandling {
    
 		  System.out.printf("7");
      }
+	 
 	
 	public static void main(String[] args) {
 		 try
@@ -118,8 +119,9 @@ public class Exceptionhandling {
 //         }	
 
 		
-//		  Exceptionhandling obj = new Exceptionhandling();
+		  Exceptionhandling obj = new Exceptionhandling();
 //          obj.m1();
+		  
 
 	}
 
