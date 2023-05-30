@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="utilsOutSource"/>
+	<classpathentry kind="lib" path="FilleUtils/FileUtils.class"/>
+	<classpathentry kind="lib" path="commonsio/commons-io-2.8.0 (1).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
