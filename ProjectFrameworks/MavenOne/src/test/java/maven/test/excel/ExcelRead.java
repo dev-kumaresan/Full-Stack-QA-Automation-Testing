@@ -72,7 +72,7 @@ public class ExcelRead {
 		    
 //			excelReadByNameRowCell("Sheet1",1,0);
 //		    readExcelAllData("Sheet1");
-		   readExcelRowByPosition("Sheet1", 1);
+//		   readExcelRowByPosition("Sheet1", 1);
 //		readExcelColumnByPosition("sheet1", 2);
 		
 			
