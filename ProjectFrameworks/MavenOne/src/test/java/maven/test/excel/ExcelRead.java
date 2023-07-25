@@ -71,7 +71,7 @@ public class ExcelRead {
 
 		
 		    
-			excelReadByNameRowCell("Sheet1",0,0);
+//			excelReadByNameRowCell("Sheet1",0,0);
 //		    readExcelAllData("Sheet1");
 //		   readExcelRowByPosition("Sheet1", 1);
 //		readExcelColumnByPosition("sheet1", 2);
@@ -79,6 +79,9 @@ public class ExcelRead {
 //		SeleniumPackages.readExcelAllData("/home/kumaresan/Documents/TestExcelFiles/kumaresan.xlsx", "Sheet2");
 //		SeleniumPackages.readExcelRowByPosition("/home/kumaresan/Documents/TestExcelFiles/kumaresan.xlsx", "Sheet1", 0);
 //		SeleniumPackages.readExcelColumnByPosition("/home/kumaresan/Documents/TestExcelFiles/kumaresan.xlsx", "Sheet1", 1);
+			
+			
+			
 		
 			
 			
