@@ -20,7 +20,7 @@ public class ExcelRead {
 		Sheet sheet = wb.getSheet(sheetName);
 		Row r = sheet.getRow(row);
 		Cell c = r.getCell(cell);
-		
+		System.out.println(c);
 	
 	}
 	public static void readExcelAllData(String sheetName) throws IOException
@@ -71,7 +71,7 @@ public class ExcelRead {
 
 		
 		    
-//			excelReadByNameRowCell("Sheet1",0,0);
+			excelReadByNameRowCell("Java",0,2);
 //		    readExcelAllData("Sheet1");
 //		   readExcelRowByPosition("Sheet1", 1);
 //		readExcelColumnByPosition("sheet1", 2);
