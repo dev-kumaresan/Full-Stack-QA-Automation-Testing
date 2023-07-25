@@ -1,5 +1,14 @@
 package maven.test.excel;
 
+/**********   Excel Read :- Basic steps Remember -
+                    get file using - File class 
+                    declare - FileInputStream class for reading a file
+                    WorkBook interface for - get the workbook first
+                    Sheet interface for - get which sheet in the workbook using getSheet() method..
+                    Row interface for - get which row in the sheet using getRow() method
+                    Cell interface for - get which cell in the row using getCell() method 
+                    finally read the cell using print statement **********/
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,7 +29,11 @@ public class ExcelRead {
 		Sheet sheet = wb.getSheet(sheetName);
 		Row r = sheet.getRow(row);
 		Cell c = r.getCell(cell);
-		System.out.println(c);
+//		c.setCellValue("Age");
+//		FileOutputStream fos = new FileOutputStream(file);                   //update Cell
+//		wb.write(fos);
+//		wb.close();
+		System.out.println(c);           //print in console
 	
 	}
 	public static void readExcelAllData(String sheetName) throws IOException
@@ -71,7 +84,7 @@ public class ExcelRead {
 
 		
 		    
-			excelReadByNameRowCell("Java",0,2);
+			excelReadByNameRowCell("Java",0,1);
 //		    readExcelAllData("Sheet1");
 //		   readExcelRowByPosition("Sheet1", 1);
 //		readExcelColumnByPosition("sheet1", 2);
