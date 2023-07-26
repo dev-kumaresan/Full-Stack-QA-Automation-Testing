@@ -13,8 +13,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelWrite {
 
-	
-
 	public static void fcWriteDataByRowCell(String Path, String sheetName,int row,int cell,String data) throws IOException
 	{
 		File file = new File(Path);
@@ -27,7 +25,6 @@ public class ExcelWrite {
 		FileOutputStream fos = new FileOutputStream(file);
 		wb.write(fos);
 		wb.close();
-		
 	}
 	public static void writeDataByRowCell(String Path,String sheetName,int row,int cell,Object datas) throws IOException
 	{
@@ -45,8 +42,8 @@ public class ExcelWrite {
 		System.out.println("success");
 	
 	}
-	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException 
+	{
 
 //			fcWriteDataByRowCell("/home/kumaresan/Documents/TestExcelFiles/kumaresan.xlsx", "Java", 0, 0, "paper");
 			Object data[][] = { {"Name","Age"},{"Kumaresan",25},{"murugan",56} };
@@ -57,13 +54,6 @@ public class ExcelWrite {
 					writeDataByRowCell("/home/kumaresan/Documents/TestExcelFiles/kumaresan.xlsx","Java",i,j, data[i][j].toString());
 				}
 			}
-			
-			
-		   
-		
-			
-			
-
 	}
 
 }
