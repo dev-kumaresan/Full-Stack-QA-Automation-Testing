@@ -54,9 +54,6 @@ public class ExcelUpdate {
 				Object cell_type = get_cell.getCellType();
 				System.out.println(cell_type);
 		}
-		
-		
-		
 
 	}
 
