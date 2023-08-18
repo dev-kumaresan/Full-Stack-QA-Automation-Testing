@@ -2,16 +2,16 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T12:04:18Z" name="Default suite" finished-at="2023-08-18T12:04:22Z" duration-ms="3960">
+  <suite started-at="2023-08-18T12:23:45Z" name="Default suite" finished-at="2023-08-18T12:23:49Z" duration-ms="4203">
     <groups>
     </groups>
-    <test started-at="2023-08-18T12:04:18Z" name="Default test" finished-at="2023-08-18T12:04:22Z" duration-ms="3960">
+    <test started-at="2023-08-18T12:23:45Z" name="Default test" finished-at="2023-08-18T12:23:49Z" duration-ms="4203">
       <class name="testngen.pageom.pageexecution.TaskFacebookExecution">
-        <test-method is-config="true" signature="launchFb()" started-at="2023-08-18T12:04:18Z" name="launchFb" description="launch the fb in browser" finished-at="2023-08-18T12:04:22Z" duration-ms="3651" status="PASS">
+        <test-method is-config="true" signature="launchFb()" started-at="2023-08-18T12:23:45Z" name="launchFb" description="launch the fb in browser" finished-at="2023-08-18T12:23:49Z" duration-ms="3803" status="PASS">
         </test-method>
-        <test-method signature="fbInputs()" started-at="2023-08-18T12:04:22Z" name="fbInputs" description="check fb valid inputs" finished-at="2023-08-18T12:04:22Z" duration-ms="192" status="PASS">
+        <test-method signature="fbInputs()" started-at="2023-08-18T12:23:49Z" name="fbInputs" description="check fb valid inputs" finished-at="2023-08-18T12:23:49Z" duration-ms="274" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="quitBrowser()" started-at="2023-08-18T12:04:22Z" name="quitBrowser" description="finally quit the browser" finished-at="2023-08-18T12:04:22Z" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()" started-at="2023-08-18T12:23:49Z" name="quitBrowser" description="finally quit the browser" finished-at="2023-08-18T12:23:49Z" duration-ms="113" status="PASS">
         </test-method>
       </class>
     </test>
