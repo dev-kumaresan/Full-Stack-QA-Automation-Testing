@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="kumaresan" failures="0" tests="1" name="testngen.pageom.pageexecution.TaskFacebookExecution" time="3.96" errors="0" timestamp="18 Aug 2023 06:34:22 GMT">
+  <testcase classname="testngen.pageom.pageexecution.TaskFacebookExecution" name="fbInputs" time="0.192"/>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)" preserve-order="false">
+    <classes>
+      <class name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution">
+        <methods>
+          <include name="launchDemoQA"/>
+          <include name="testDemoInputs" invocation-numbers="0"/>
+          <include name="quitDemoQA"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
