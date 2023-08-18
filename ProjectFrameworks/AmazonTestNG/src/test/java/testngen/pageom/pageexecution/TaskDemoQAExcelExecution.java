@@ -49,9 +49,12 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.clickElement(tdq.gender);
 		Assert.assertTrue(tdq.gender.isEnabled());
 
+		
 		BaseClass.typeWrite(tdq.mobile, mobile);
 		String actualMobile = BaseClass.attributeValueOfAssign(tdq.mobile, tdq.attribute);
+		int actualMobileLength = actualMobile.length();
 		Assert.assertEquals(mobile, actualMobile);
+		Assert.assertEquals(tdq.mobLen, actualMobileLength);
 
 		BaseClass.clickElement(tdq.dob);
 		Assert.assertTrue(tdq.dob.isDisplayed());
@@ -96,6 +99,9 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.enterKey();
 		BaseClass.pageWaitTill(3000);
 		Assert.assertTrue(tdq.submittedDataSection.isDisplayed());
+		BaseClass.pageWaitBasedOnDomLoad(5000);
+		BaseClass.refreshPage();
+		
 	}
 
 	@AfterClass(description = "finally quit the demoQA")
@@ -118,6 +124,17 @@ public class TaskDemoQAExcelExecution {
 				"" + Utilities.accessByRecords(0, 7).getStringCellValue() + "",
 				"" + Utilities.accessByRecords(0, 8).getStringCellValue() + "",
 
+				},
+				{
+					"" + Utilities.accessByRecords(1, 0).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 1).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 2).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 3).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 4).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 5).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 6).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 7).getStringCellValue() + "",
+					"" + Utilities.accessByRecords(1, 8).getStringCellValue() + "",
 				}
 
 		};

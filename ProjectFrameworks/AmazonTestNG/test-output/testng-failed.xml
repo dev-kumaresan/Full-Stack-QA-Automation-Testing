@@ -6,7 +6,8 @@
       <class name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution">
         <methods>
           <include name="launchDemoQA"/>
-          <include name="testDemoInputs" invocation-numbers="0"/>
+          <include name="testDemoInputs" invocation-numbers="1"/>
+          <include name="quitDemoQA"/>
         </methods>
       </class>
     </classes>

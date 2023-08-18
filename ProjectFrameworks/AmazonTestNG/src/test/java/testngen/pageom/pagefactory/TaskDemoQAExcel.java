@@ -14,6 +14,7 @@ public class TaskDemoQAExcel {
 
 	public static String DemoQaUrl = "https://demoqa.com/automation-practice-form";
 	public static String attribute = "value";
+	public static int mobLen = 10;
 	@FindBy(id = "firstName")
 	public static WebElement fn;
 	@FindBy(id = "lastName")

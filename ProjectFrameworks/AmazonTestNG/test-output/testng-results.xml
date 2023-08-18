@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T16:25:29Z" name="Default suite" finished-at="2023-08-18T16:26:24Z" duration-ms="54933">
+  <suite started-at="2023-08-18T16:49:20Z" name="Default suite" finished-at="2023-08-18T16:50:17Z" duration-ms="57065">
     <groups>
     </groups>
-    <test started-at="2023-08-18T16:25:29Z" name="Default test" finished-at="2023-08-18T16:26:24Z" duration-ms="54933">
+    <test started-at="2023-08-18T16:49:20Z" name="Default test" finished-at="2023-08-18T16:50:17Z" duration-ms="57065">
       <class name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution">
-        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-18T16:25:29Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-18T16:26:14Z" duration-ms="44543" status="PASS">
+        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-18T16:49:20Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-18T16:49:58Z" duration-ms="37776" status="PASS">
         </test-method>
-        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:26:15Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:26:24Z" duration-ms="9578" status="PASS">
+        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:49:59Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:50:13Z" duration-ms="14882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,94 @@
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="quitDemoQA()" started-at="2023-08-18T16:26:24Z" name="quitDemoQA" description="finally quit the demoQA" finished-at="2023-08-18T16:26:24Z" duration-ms="113" status="PASS">
+        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:50:13Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:50:17Z" duration-ms="3399" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kumaresan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[733939535]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Pudukkottai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TamilNadu]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Octobe]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[20002]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<9> but was:<10>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<9> but was:<10>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:365)
+	at org.testng.Assert.assertEquals(Assert.java:375)
+	at testngen.pageom.pageexecution.TaskDemoQAExcelExecution.testDemoInputs(TaskDemoQAExcelExecution.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method is-config="true" signature="quitDemoQA()" started-at="2023-08-18T16:50:17Z" name="quitDemoQA" description="finally quit the demoQA" finished-at="2023-08-18T16:50:17Z" duration-ms="112" status="PASS">
         </test-method>
       </class>
     </test>
