@@ -7,7 +7,6 @@
         <methods>
           <include name="launchDemoQA"/>
           <include name="testDemoInputs" invocation-numbers="0"/>
-          <include name="quitDemoQA"/>
         </methods>
       </class>
     </classes>

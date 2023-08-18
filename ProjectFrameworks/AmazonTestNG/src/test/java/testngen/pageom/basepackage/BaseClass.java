@@ -241,6 +241,12 @@ public class BaseClass extends KeyboardKeys {
 
 		System.out.println(s.getFirstSelectedOption().getText());
 	}
+	public static String dropDownMultiSelectGfsoVTAssign(WebElement element,String value) {
+		
+		Select s = new Select(element);
+		s.selectByVisibleText(value);
+		return s.getFirstSelectedOption().getText();
+	}
 
 	public static void dropDownMultiSelectGasos(Select s) {
 		List<WebElement> all_selected_options = s.getAllSelectedOptions();
@@ -256,6 +262,15 @@ public class BaseClass extends KeyboardKeys {
 		System.out.println("Enabled : " + isEnabled);
 		boolean isSelected = element.isSelected();
 		System.out.println("Selected : " + isSelected);
+	}
+	public static boolean radioButtonOrCheckBoxValidateAssign(WebElement element) {
+		boolean isDisplayed = element.isDisplayed();
+		System.out.println("Displayed : " + isDisplayed);
+		boolean isEnabled = element.isEnabled();
+		System.out.println("Enabled : " + isEnabled);
+		boolean isSelected = element.isSelected();
+		System.out.println("Selected : " + isSelected);
+		return isSelected;
 	}
 
 	public static void clickOkBasedResponse() {
