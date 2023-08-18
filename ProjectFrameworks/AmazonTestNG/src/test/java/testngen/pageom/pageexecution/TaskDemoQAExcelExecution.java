@@ -27,8 +27,10 @@ public class TaskDemoQAExcelExecution {
 	}
 
 	@Test(dataProvider = "excelDatas", description = "test excel inputs")
-	public void testDemoInputs(String firstName, String lastName, String Email, String mobile, String sub, String addr,
-			String state, String month, String year) throws AWTException, InterruptedException, IOException {
+	public void testDemoInputs(String firstName, String lastName, String Email, 
+			String mobile, String sub, String addr,String state, String month, 
+			String year) throws AWTException, InterruptedException, IOException 
+	{
 		TaskDemoQAExcel tdq = new TaskDemoQAExcel();
 		BaseClass.pageWaitTill(3000);
 		BaseClass.pageWaitBasedOnDomLoad(5000);
