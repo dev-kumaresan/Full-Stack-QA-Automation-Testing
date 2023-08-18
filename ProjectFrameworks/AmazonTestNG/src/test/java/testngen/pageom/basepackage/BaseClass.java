@@ -47,16 +47,17 @@ public class BaseClass extends KeyboardKeys {
 	public static void chromeDriverLaunch() {
 		driver = new ChromeDriver();
 	}
-	public static WebDriver chromeDriverAssignLaunch()
-	{
+
+	public static WebDriver chromeDriverAssignLaunch() {
 		driver = new ChromeDriver();
 		return driver;
 	}
-	public static WebDriver firefoxDriverAssignLaunch()
-	{
+
+	public static WebDriver firefoxDriverAssignLaunch() {
 		driver = new FirefoxDriver();
 		return driver;
 	}
+
 	public static void edgeDriverLaunch() {
 		driver = new EdgeDriver();
 	}
@@ -68,10 +69,12 @@ public class BaseClass extends KeyboardKeys {
 	public static void launchUrl(String url) {
 		driver.get(url);
 	}
+
 	public static String launchUrlAssign(String url) {
 		driver.get(url);
 		return url;
 	}
+
 	public static Object launchUrl(Object object) {
 		driver.get((String) object);
 		return object;
@@ -88,9 +91,11 @@ public class BaseClass extends KeyboardKeys {
 	public static void workingUrl() {
 		System.out.println(driver.getCurrentUrl());
 	}
+
 	public static String workingUrlAssign() {
 		return driver.getCurrentUrl();
 	}
+
 	public static void workingUrlTitle() {
 		System.out.println(driver.getTitle());
 	}
@@ -138,13 +143,12 @@ public class BaseClass extends KeyboardKeys {
 		return lw;
 	}
 
-	public static void typeWrite(WebElement textbox, String tester_input)
-	{
-		
+	public static void typeWrite(WebElement textbox, String tester_input) {
+
 		textbox.sendKeys(tester_input);
 	}
-	public static void typeWritePF(WebElement textbox, String tester_input)
-	{
+
+	public static void typeWritePF(WebElement textbox, String tester_input) {
 		textbox.sendKeys(tester_input);
 	}
 
@@ -157,21 +161,24 @@ public class BaseClass extends KeyboardKeys {
 	}
 
 	public static String attributeValueOfAssign(WebElement element, String value) {
-		
+
 		return element.getAttribute(value);
 	}
+
 	public static void attributeValueOf(WebElement element, String value) {
-		
+
 		System.out.println(element.getAttribute(value));
 	}
-	
+
 	public static void styleOf(WebElement element, String property) {
 		System.out.println(element.getCssValue(property));
 	}
+
 	public static String styleOfAssign(WebElement element, String property) {
-		
+
 		return element.getCssValue(property);
 	}
+
 	public static void enter(WebElement element) {
 		element.submit();
 	}
@@ -241,8 +248,9 @@ public class BaseClass extends KeyboardKeys {
 
 		System.out.println(s.getFirstSelectedOption().getText());
 	}
-	public static String dropDownMultiSelectGfsoVTAssign(WebElement element,String value) {
-		
+
+	public static String dropDownMultiSelectGfsoVTAssign(WebElement element, String value) {
+
 		Select s = new Select(element);
 		s.selectByVisibleText(value);
 		return s.getFirstSelectedOption().getText();
@@ -263,6 +271,7 @@ public class BaseClass extends KeyboardKeys {
 		boolean isSelected = element.isSelected();
 		System.out.println("Selected : " + isSelected);
 	}
+
 	public static boolean radioButtonOrCheckBoxValidateAssign(WebElement element) {
 		boolean isDisplayed = element.isDisplayed();
 		System.out.println("Displayed : " + isDisplayed);
@@ -300,7 +309,7 @@ public class BaseClass extends KeyboardKeys {
 		driver.switchTo().frame(element);
 	}
 
-	public static void tabSwitch(WebDriver driver,int which_tab) {
+	public static void tabSwitch(WebDriver driver, int which_tab) {
 		Set<String> tabs = driver.getWindowHandles();
 		List<String> tabs_list = new ArrayList<>(tabs);
 		driver.switchTo().window(tabs_list.get(which_tab));
@@ -412,55 +421,45 @@ public class BaseClass extends KeyboardKeys {
 			System.out.println("Something in the argument, Not Found !");
 		}
 	}
-	public static void readExcelColumnByPosition(String Path,String sheetName, int ColumnPosition) throws IOException
-	{
-		try
-		{
-		File file = new File(Path);
-		FileInputStream fis = new FileInputStream(file);
-		Workbook wb = new XSSFWorkbook(fis);
-		Sheet sheet = wb.getSheet(sheetName);
-		for(int i=0;i<sheet.getPhysicalNumberOfRows();i++)
-		{
-			Row r = sheet.getRow(i);
-			Cell c = r.getCell(ColumnPosition);
-			System.out.println(c);
-		}
-		}
-		catch(Exception e)
-		{
+
+	public static void readExcelColumnByPosition(String Path, String sheetName, int ColumnPosition) throws IOException {
+		try {
+			File file = new File(Path);
+			FileInputStream fis = new FileInputStream(file);
+			Workbook wb = new XSSFWorkbook(fis);
+			Sheet sheet = wb.getSheet(sheetName);
+			for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
+				Row r = sheet.getRow(i);
+				Cell c = r.getCell(ColumnPosition);
+				System.out.println(c);
+			}
+		} catch (Exception e) {
 			System.out.println("Something in the argument, Not Found !");
 		}
 	}
-	public static String getFromProperty(String propertyValue) throws IOException
-	{
+
+	public static String getFromProperty(String propertyValue) throws IOException {
 		File file = new File("/home/kumaresan/eclipse-workspace/AmazonTestNG/credentials.properties");
 		FileInputStream fis = new FileInputStream(file);
 		Properties p = new Properties();
 		p.load(fis);
 		String value = p.getProperty(propertyValue);
 		return value;
-		
+
 	}
-	public static void printStatement(Object value)
-	{
+
+	public static void printStatement(Object value) {
 		System.out.println(value);
 	}
-	public static String reteriveElementTxt(WebElement element)
-	{
+
+	public static String reteriveElementTxt(WebElement element) {
 		return element.getText();
 	}
-	public static void webDriverWaitAndClick(
-	        WebDriver driver, WebElement  locator, Duration time) 
-	{
-	        WebDriverWait wait = new WebDriverWait(driver, time);
-	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-	        element.click();
-    }
 
-
-
-
-	
+	public static void webDriverWaitAndClick(WebDriver driver, WebElement locator, Duration time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		element.click();
+	}
 
 }
