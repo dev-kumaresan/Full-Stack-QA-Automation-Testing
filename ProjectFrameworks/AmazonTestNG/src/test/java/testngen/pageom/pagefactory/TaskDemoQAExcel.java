@@ -32,6 +32,8 @@ public class TaskDemoQAExcel {
 	public static WebElement year;
 	@FindBy(xpath = "//*[text()='13']")
 	public static WebElement day;
+	@FindBy(xpath="//input[@id='dateOfBirthInput']")
+	public static WebElement dobInput;
 	@FindBy(xpath = "(//div[@id='subjectsWrapper']/child::div)[2]/child::div/child::div")
 	public static WebElement subject;
 	@FindBy(css = "#hobbiesWrapper > div.col-md-9.col-sm-12 > div:nth-child(3) > label")
@@ -40,6 +42,8 @@ public class TaskDemoQAExcel {
 	public static WebElement address;
 	@FindBy(xpath = "//div[@class=' css-1wa3eu0-placeholder']")
 	public static WebElement state;
+	@FindBy(xpath="//div[@class=' css-1uccc91-singleValue']")
+	public static WebElement stateText;
 	@FindBy(xpath = "(//div[@class=' css-1wa3eu0-placeholder'])[2]")
 	public static WebElement city;
 	@FindBy(id = "submit")

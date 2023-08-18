@@ -22,13 +22,13 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.maximizeWindow();
 		BaseClass.ctrlPress();
 		BaseClass.minusOpKey();
-//		BaseClass.minusOpKey();
-//		BaseClass.ctrlRelease();
+		BaseClass.minusOpKey();
+		BaseClass.ctrlRelease();
 	}
 
 	@Test(dataProvider = "excelDatas", description = "test excel inputs")
 	public void testDemoInputs(String firstName, String lastName, String Email, String mobile, String sub, String addr,
-			String state) throws AWTException, InterruptedException, IOException {
+			String state, String month, String year) throws AWTException, InterruptedException, IOException {
 		TaskDemoQAExcel tdq = new TaskDemoQAExcel();
 		BaseClass.pageWaitTill(3000);
 		BaseClass.pageWaitBasedOnDomLoad(5000);
@@ -54,25 +54,27 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.clickElement(tdq.dob);
 		Assert.assertTrue(tdq.dob.isDisplayed());
 
-		BaseClass.dropDownHandle(tdq.month, "October");
-		String actualMonth = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.month, "October");
+		BaseClass.dropDownHandle(tdq.month, month);
+		String actualMonth = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.month, month);
+		String splitMonthTxt = actualMonth.substring(0, 3);
 		Assert.assertEquals("October", actualMonth);
 
-		BaseClass.dropDownHandle(tdq.year, "1998");
-		String actualYear = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.year, "1998");
+		BaseClass.dropDownHandle(tdq.year, year);
+		String actualYear = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.year, year);
 		Assert.assertEquals("1998", actualYear);
 
 		BaseClass.clickElement(tdq.day);
-		String actualDay = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.day, "13");
-		Assert.assertEquals("13", actualDay);
+		String actualDOB = BaseClass.attributeValueOfAssign(tdq.dobInput, tdq.attribute);
+		String[] actualDay = actualDOB.split(" ");
+		Assert.assertEquals(actualDay[0] + " " + splitMonthTxt + " " + actualYear, actualDOB);
 
 		BaseClass.actionTypeWrite(tdq.subject, sub);
 		BaseClass.enterKey();
-		String actualSubject = BaseClass.attributeValueOfAssign(tdq.subject, tdq.attribute);
+		String actualSubject = BaseClass.reteriveElementTxt(tdq.subject);
 		Assert.assertEquals(sub, actualSubject);
 
-		Assert.assertTrue(BaseClass.radioButtonOrCheckBoxValidateAssign(tdq.hobby));
 		BaseClass.clickElement(tdq.hobby);
+		Assert.assertTrue(tdq.hobby.isEnabled());
 
 		BaseClass.typeWrite(tdq.address, addr);
 		String actualAddress = BaseClass.attributeValueOfAssign(tdq.address, tdq.attribute);
@@ -80,7 +82,7 @@ public class TaskDemoQAExcelExecution {
 
 		BaseClass.actionTypeWrite(tdq.state, state);
 		BaseClass.enterKey();
-		String actualState = BaseClass.attributeValueOfAssign(tdq.state, tdq.attribute);
+		String actualState = BaseClass.reteriveElementTxt(tdq.stateText);
 		Assert.assertEquals(state, actualState);
 
 		BaseClass.tabKey();
@@ -92,11 +94,9 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.enterKey();
 		BaseClass.pageWaitTill(3000);
 		Assert.assertTrue(tdq.submittedDataSection.isDisplayed());
-//		
-
 	}
 
-	@AfterClass(description = "finally quit the demoQA", enabled = false)
+	@AfterClass(description = "finally quit the demoQA")
 	public static void quitDemoQA() {
 		BaseClass.pageWaitBasedOnDomLoad(5000);
 		BaseClass.closeEntireDriver();
@@ -113,6 +113,8 @@ public class TaskDemoQAExcelExecution {
 				"" + Utilities.accessByRecords(0, 4).getStringCellValue() + "",
 				"" + Utilities.accessByRecords(0, 5).getStringCellValue() + "",
 				"" + Utilities.accessByRecords(0, 6).getStringCellValue() + "",
+				"" + Utilities.accessByRecords(0, 7).getStringCellValue() + "",
+				"" + Utilities.accessByRecords(0, 8).getStringCellValue() + "",
 
 				}
 
