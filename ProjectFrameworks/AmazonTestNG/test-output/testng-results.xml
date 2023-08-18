@@ -2,14 +2,14 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T16:08:08Z" name="Default suite" finished-at="2023-08-18T16:09:00Z" duration-ms="51802">
+  <suite started-at="2023-08-18T16:25:29Z" name="Default suite" finished-at="2023-08-18T16:26:24Z" duration-ms="54933">
     <groups>
     </groups>
-    <test started-at="2023-08-18T16:08:08Z" name="Default test" finished-at="2023-08-18T16:09:00Z" duration-ms="51802">
+    <test started-at="2023-08-18T16:25:29Z" name="Default test" finished-at="2023-08-18T16:26:24Z" duration-ms="54933">
       <class name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution">
-        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-18T16:08:08Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-18T16:08:49Z" duration-ms="41051" status="PASS">
+        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-18T16:25:29Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-18T16:26:14Z" duration-ms="44543" status="PASS">
         </test-method>
-        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:08:50Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:09:00Z" duration-ms="9577" status="PASS">
+        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:26:15Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:26:24Z" duration-ms="9578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,6 +57,8 @@
               </value>
             </param>
           </params>
+        </test-method>
+        <test-method is-config="true" signature="quitDemoQA()" started-at="2023-08-18T16:26:24Z" name="quitDemoQA" description="finally quit the demoQA" finished-at="2023-08-18T16:26:24Z" duration-ms="113" status="PASS">
         </test-method>
       </class>
     </test>

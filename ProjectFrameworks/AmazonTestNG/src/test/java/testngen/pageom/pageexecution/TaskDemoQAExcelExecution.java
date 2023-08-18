@@ -59,11 +59,11 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.dropDownHandle(tdq.month, month);
 		String actualMonth = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.month, month);
 		String splitMonthTxt = actualMonth.substring(0, 3);
-		Assert.assertEquals("October", actualMonth);
+		Assert.assertEquals(month, actualMonth);
 
 		BaseClass.dropDownHandle(tdq.year, year);
 		String actualYear = BaseClass.dropDownMultiSelectGfsoVTAssign(tdq.year, year);
-		Assert.assertEquals("1998", actualYear);
+		Assert.assertEquals(year, actualYear);
 
 		BaseClass.clickElement(tdq.day);
 		String actualDOB = BaseClass.attributeValueOfAssign(tdq.dobInput, tdq.attribute);
