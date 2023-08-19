@@ -361,7 +361,7 @@ public class BaseClass extends KeyboardKeys {
 		return ts;
 	}
 
-	public static void takeScreenshot(WebElement element, String path) throws IOException {
+	public static void takeScreenshot(WebElement element, String path) throws IOException  {
 		File screenshot = element.getScreenshotAs(OutputType.FILE);
 		File save_to = new File(path);
 		FileUtils f = new FileUtils();
@@ -374,6 +374,7 @@ public class BaseClass extends KeyboardKeys {
 	public static void folderCreation(String Path)
 	{
 		File file = new File(Path);
+		
 		
 	}
 	public static void excelReadByNameRowCell(String Path, String sheetName, int row, int cell) throws IOException {

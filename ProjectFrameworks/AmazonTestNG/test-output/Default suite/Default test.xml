@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="kumaresan" failures="1" tests="2" name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" time="57.065" errors="0" timestamp="18 Aug 2023 11:20:17 GMT">
-  <testcase classname="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" name="testDemoInputs" time="14.882"/>
-  <testcase classname="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" name="testDemoInputs" time="3.399">
+<testsuite hostname="kumaresan" failures="1" tests="3" name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" time="116.019" errors="0" timestamp="19 Aug 2023 04:08:37 GMT">
+  <testcase classname="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" name="testDemoInputs" time="16.628"/>
+  <testcase classname="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" name="testDemoInputs" time="3.745">
     <failure type="java.lang.AssertionError" message="expected:&amp;lt;9&amp;gt; but was:&amp;lt;10&amp;gt;">
       <![CDATA[java.lang.AssertionError: expected:<9> but was:<10>
 	at org.testng.Assert.fail(Assert.java:89)
@@ -36,4 +36,5 @@
 ]]>
     </failure>
   </testcase>
+  <testcase classname="testngen.pageom.pageexecution.TaskDemoQAExcelExecution" name="testReport" time="16.987"/>
 </testsuite>

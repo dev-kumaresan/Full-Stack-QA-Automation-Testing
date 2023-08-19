@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -104,16 +103,21 @@ public class TaskDemoQAExcelExecution {
 		BaseClass.refreshPage();
 		
 	}
-	@AfterMethod(description="screenshot the test report",dependsOnMethods= {"testDemoInputs"})
-	public void testReport() throws IOException
+	@Test(description="screenshot the test report")
+	public void testReport() throws IOException 
 	{
-		
+		 
 		BaseClass.launchUrl(TaskDemoQAExcel.testReportUrl);
 		BaseClass.refreshPage();
 		BaseClass.folderCreation(TaskDemoQAExcel.testReportFolderUrl);
+		BaseClass.minimizeWindow();
 		String name = Utilities.getUserInput();
-		BaseClass.takeScreenshot(BaseClass.driver, TaskDemoQAExcel.testReportFolderUrl+Utilities.fileName(name));
+		BaseClass.maximizeWindow();
 		BaseClass.pageWaitBasedOnDomLoad(3000);
+		BaseClass.takeScreenshot(
+		BaseClass.driver, TaskDemoQAExcel.testReportFolderUrl+"/"+Utilities.fileName(name));
+		BaseClass.pageWaitBasedOnDomLoad(3000);
+		
 	}
 	@AfterClass(description = "finally quit the demoQA")
 	public static void quitDemoQA() {

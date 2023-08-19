@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="1" failed="1" skipped="0">
+<testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T16:49:20Z" name="Default suite" finished-at="2023-08-18T16:50:17Z" duration-ms="57065">
+  <suite started-at="2023-08-19T09:36:41Z" name="Default suite" finished-at="2023-08-19T09:38:37Z" duration-ms="116019">
     <groups>
     </groups>
-    <test started-at="2023-08-18T16:49:20Z" name="Default test" finished-at="2023-08-18T16:50:17Z" duration-ms="57065">
+    <test started-at="2023-08-19T09:36:41Z" name="Default test" finished-at="2023-08-19T09:38:37Z" duration-ms="116019">
       <class name="testngen.pageom.pageexecution.TaskDemoQAExcelExecution">
-        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-18T16:49:20Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-18T16:49:58Z" duration-ms="37776" status="PASS">
+        <test-method is-config="true" signature="launchDemoQA()" started-at="2023-08-19T09:36:41Z" name="launchDemoQA" description="launch the DemoQA Site" finished-at="2023-08-19T09:37:59Z" duration-ms="77637" status="PASS">
         </test-method>
-        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:49:59Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:50:13Z" duration-ms="14882" status="PASS">
+        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-19T09:38:00Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-19T09:38:16Z" duration-ms="16628" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
             </param>
           </params>
         </test-method>
-        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-18T16:50:13Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-18T16:50:17Z" duration-ms="3399" status="FAIL">
+        <test-method signature="testDemoInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" started-at="2023-08-19T09:38:16Z" name="testDemoInputs" description="test excel inputs" finished-at="2023-08-19T09:38:20Z" duration-ms="3745" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,9 @@
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="quitDemoQA()" started-at="2023-08-18T16:50:17Z" name="quitDemoQA" description="finally quit the demoQA" finished-at="2023-08-18T16:50:17Z" duration-ms="112" status="PASS">
+        <test-method signature="testReport()" started-at="2023-08-19T09:38:20Z" name="testReport" description="screenshot the test report" finished-at="2023-08-19T09:38:37Z" duration-ms="16987" status="PASS">
+        </test-method>
+        <test-method is-config="true" signature="quitDemoQA()" started-at="2023-08-19T09:38:37Z" name="quitDemoQA" description="finally quit the demoQA" finished-at="2023-08-19T09:38:37Z" duration-ms="111" status="PASS">
         </test-method>
       </class>
     </test>
