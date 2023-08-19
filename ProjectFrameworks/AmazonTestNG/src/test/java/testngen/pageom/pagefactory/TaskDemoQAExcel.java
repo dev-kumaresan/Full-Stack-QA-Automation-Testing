@@ -14,6 +14,8 @@ public class TaskDemoQAExcel {
 
 	public static String DemoQaUrl = "https://demoqa.com/automation-practice-form";
 	public static String attribute = "value";
+	public static String testReportFolderUrl = "/home/kumaresan/Documents/TestScreenshots/TestReports";
+	public static String testReportUrl = "file:///home/kumaresan/git/Full-Stack-QA-Automation-Testing/ProjectFrameworks/AmazonTestNG/test-output/emailable-report.html";
 	public static int mobLen = 10;
 	@FindBy(id = "firstName")
 	public static WebElement fn;

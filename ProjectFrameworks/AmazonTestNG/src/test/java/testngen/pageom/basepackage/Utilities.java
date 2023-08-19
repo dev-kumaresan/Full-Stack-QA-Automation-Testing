@@ -3,6 +3,7 @@ package testngen.pageom.basepackage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -28,6 +29,17 @@ public static Cell accessByRecords(int row,int CellIndex) throws IOException
 	Cell cell1 = row1.getCell(CellIndex);
 	cell1.setCellType(CellType.STRING);
 	return cell1;
+}
+public static String getUserInput()
+{
+	Scanner s = new Scanner(System.in);
+	System.out.println("Enter filename : ");
+	String input = s.nextLine();
+	return input;
+}
+public static String fileName(String name)
+{
+	return name+".png";
 }
 }
 

@@ -367,11 +367,15 @@ public class BaseClass extends KeyboardKeys {
 		FileUtils f = new FileUtils();
 		FileUtils.copyFile(screenshot, save_to);
 	}
-
+	
 	public static void pageWaitBasedOnDomLoad(int milliseconds) {
 		driver.manage().timeouts().implicitlyWait(milliseconds, TimeUnit.SECONDS);
 	}
-
+	public static void folderCreation(String Path)
+	{
+		File file = new File(Path);
+		
+	}
 	public static void excelReadByNameRowCell(String Path, String sheetName, int row, int cell) throws IOException {
 		try {
 			File file = new File(Path);
