@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-07T05:38:26.457Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5615052,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testngen.hooks.Hooks.beforeScenerio()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Open google and enter facebook and Search Check Meta Section is Displayed.",
+        "description": "",
+        "id": "search-facebook-and-check-its-credentials;open-google-and-enter-facebook-and-search-check-meta-section-is-displayed.",
+        "after": [
+          {
+            "result": {
+              "duration": 112590,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testngen.hooks.Hooks.afterScenerio()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 337428,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the \"https://www.google.com/\" url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "testngen.pageom.stepdefinition.FacebookDefinition.launchUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169111,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Search the \"facebook\" in the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"facebook\"",
+                  "offset": 11
+                }
+              ],
+              "location": "testngen.pageom.stepdefinition.FacebookDefinition.searchBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110890,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click search button, Validate Meta Data Section will be displayed.",
+            "match": {
+              "location": "testngen.pageom.stepdefinition.FacebookDefinition.validateIfMetaDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116032,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Close the browser.",
+            "match": {
+              "location": "testngen.pageom.stepdefinition.FacebookDefinition.quit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Facebook and Check its Credentials",
+    "description": "",
+    "id": "search-facebook-and-check-its-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FacebookDefinition.feature",
+    "tags": []
+  }
+]
