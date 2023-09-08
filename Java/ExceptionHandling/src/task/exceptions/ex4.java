@@ -1,10 +1,9 @@
 package task.exceptions;
-
 import java.util.Scanner;
 
-public class VotersCheck {
+public class ex4 {
 
-	public static void main(String [] args)  {
+	public static void main(String [] args) {
 		try {	int voters_age;
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter voters age : ");
@@ -15,13 +14,13 @@ public class VotersCheck {
 			}
 			else
 			{
-				throw new VotersNotValidException();
+				throw new Throwable("Voters not valid");
 			}
 		}
-		catch(VotersNotValidException e)
+		catch(Throwable e)
 			
 		{
-			e.getVoters();
+			e.printStackTrace();
 			
 			
 		}
