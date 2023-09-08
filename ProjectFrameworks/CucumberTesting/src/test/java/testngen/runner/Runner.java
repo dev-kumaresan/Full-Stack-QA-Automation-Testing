@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="/home/kumaresan/eclipse-workspace/CucumberTesting/src/test/resources/Features/FacebookDefinition.feature",
+@CucumberOptions(features="/home/kumaresan/git/Full-Stack-QA-Automation-Testing/ProjectFrameworks/CucumberTesting/src/test/resources/Features/FacebookDefinition.feature",
 				 glue={"testngen.pageom.stepdefinition","testngen.hooks"},
                  monochrome=true,
                  dryRun=true,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.158">
-    <testcase classname="Search Facebook and Check its Credentials" name="Open google and enter facebook and Search Check Meta Section is Displayed." time="0.05">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.184">
+    <testcase classname="Search Facebook and Check its Credentials" name="Open google and enter facebook and Search Check Meta Section is Displayed." time="0.054">
         <system-out><![CDATA[Given Launch the "https://www.google.com/" url..............................passed
 When Search the "facebook" in the search bar................................passed
 And click search button, Validate Meta Data Section will be displayed.......passed

@@ -455,8 +455,9 @@ public class BaseClass extends KeyboardKeys {
 	}
 
 	public static String getFromProperty(String propertyValue) throws IOException {
-		File file = new File(
-				"/home/kumaresan/git/Full-Stack-QA-Automation-Testing/ProjectFrameworks/AmazonTestNG/credentials.properties");
+		File relativePath = new File(propertyValue);
+		String absolutePath = relativePath.getAbsolutePath();
+		File file = new File(absolutePath);
 		FileInputStream fis = new FileInputStream(file);
 		Properties p = new Properties();
 		p.load(fis);
