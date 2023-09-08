@@ -1,6 +1,6 @@
 
 public class Desktop implements Hardware, Software {
-
+ 
 	public void desktopModel() {
 		System.out.println("Desktop/OS Model :- LZO");
 	}
