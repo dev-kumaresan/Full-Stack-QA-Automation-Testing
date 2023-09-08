@@ -22,17 +22,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    @Override
-    public String toString() {
-        return "Employee ID: " + empId +
-                "\nName: " + name +
-                "\nPhone: " + phone +
-                "\nAddress: " + address +
-                "\nDate of Birth (dob): " + dob +
-                "\nDate of Joining (doj): " + doj +
-                "\nEmail: " + email +
-                "\nGender: " + gender +
-                "\nSalary: " + salary +
-                "\n";
-    }
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + ", phone=" + phone + ", address=" + address + ", dob="
+				+ dob + ", doj=" + doj + ", email=" + email + ", gender=" + gender + ", salary=" + salary + "]";
+	}
+
+   
 }

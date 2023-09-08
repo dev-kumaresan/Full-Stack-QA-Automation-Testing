@@ -11,7 +11,7 @@ public class EmpMap {
 		
 		Map<String,Emp> details = new TreeMap<>();
 		
-		for(int i=0;i<10;i++)
+		for(int i=0;i<1;i++)
 		{
 			Scanner s = new Scanner(System.in);
 			System.out.println("Enter emp id : ");

@@ -2,7 +2,6 @@ package task.set;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.Scanner;
 public class CollectionSet {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -25,8 +24,7 @@ public class CollectionSet {
             String address = scanner.nextLine();
 
             System.out.print("Date of Birth (dob): ");
-            St
-            ring dob = scanner.nextLine();
+            String dob = scanner.nextLine();
 
             System.out.print("Date of Joining (doj): ");
             String doj = scanner.nextLine();
