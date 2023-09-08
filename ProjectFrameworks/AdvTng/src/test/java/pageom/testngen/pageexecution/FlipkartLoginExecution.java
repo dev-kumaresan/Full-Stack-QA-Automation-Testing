@@ -53,7 +53,7 @@ public void checkMobileNumberInFirefox(String browser) throws Exception
     Assert.assertEquals(tfl.e1, error);
 }
 @Parameters("browser1")
-@Test(groups="failedtests")
+@Test(groups="failedtests",retryAnalyzer = Listeners.class)
 public void mobileNumberFunctionSkipped(String browser) throws Exception
 {
 	browserTest(browser);

@@ -9,7 +9,7 @@
   <test name="CrossBrowserTest">
 	  <groups>
 		  <run>
-			  <include name="successtests"/>
+			  <include name="failedtests"/>
 		  </run>
 	  </groups>
     <classes>

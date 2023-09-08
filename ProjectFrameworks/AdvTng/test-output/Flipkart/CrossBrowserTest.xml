@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="kumaresan" failures="0" tests="2" name="pageom.testngen.pageexecution.FlipkartLoginExecution" time="17.365" errors="0" timestamp="5 Sep 2023 10:53:15 GMT">
-  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="checkMobileNumberInChrome" time="7.32"/>
-  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="checkMobileNumberInFirefox" time="10.025"/>
+<testsuite hostname="kumaresan" failures="4" tests="4" name="pageom.testngen.pageexecution.FlipkartLoginExecution" time="31.557" errors="0" timestamp="8 Sep 2023 03:32:09 GMT">
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="mobileNumberFunctionSkipped" time="9.383">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Please enter valid Email ID/Mobile number&amp;gt; but was:&amp;lt;Please enter valid Email ID/Mobile numbers.&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Please enter valid Email ID/Mobile number> but was:<Please enter valid Email ID/Mobile numbers.>
+	at pageom.testngen.pageexecution.FlipkartLoginExecution.mobileNumberFunctionSkipped(FlipkartLoginExecution.java:67)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="mobileNumberFunctionSkipped" time="4.948">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Please enter valid Email ID/Mobile number&amp;gt; but was:&amp;lt;Please enter valid Email ID/Mobile numbers.&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Please enter valid Email ID/Mobile number> but was:<Please enter valid Email ID/Mobile numbers.>
+	at pageom.testngen.pageexecution.FlipkartLoginExecution.mobileNumberFunctionSkipped(FlipkartLoginExecution.java:67)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="mobileNumberFunctionSkipped" time="4.639">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Please enter valid Email ID/Mobile number&amp;gt; but was:&amp;lt;Please enter valid Email ID/Mobile numbers.&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Please enter valid Email ID/Mobile number> but was:<Please enter valid Email ID/Mobile numbers.>
+	at pageom.testngen.pageexecution.FlipkartLoginExecution.mobileNumberFunctionSkipped(FlipkartLoginExecution.java:67)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="mobileNumberInFailedCase" time="12.564">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Please enter valid Email ID/Mobile number&amp;gt; but was:&amp;lt;Please enter valid Email ID/Mobile numbers.&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Please enter valid Email ID/Mobile number> but was:<Please enter valid Email ID/Mobile numbers.>
+	at pageom.testngen.pageexecution.FlipkartLoginExecution.mobileNumberInFailedCase(FlipkartLoginExecution.java:81)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
 </testsuite>
