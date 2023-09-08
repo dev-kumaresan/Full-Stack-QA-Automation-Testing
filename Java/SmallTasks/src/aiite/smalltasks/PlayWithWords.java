@@ -2,7 +2,8 @@ package aiite.smalltasks;
 
 public class PlayWithWords {
 	public static void main(String[] args) {
-		String statement = "kumaresan from batch-3", name = "KUMARESAN", name2 = "kumaresan", empty = "", blank = " ",
+		String statement = "kumaresan from batch-3", name = "KUMARESAN", name2 = "kumaresan", empty = "", 
+				blank = " ",
 				us = "   unwanted", academy = " in aiite";
 
 		System.out.println(name.startsWith("k")); // returns boolean
