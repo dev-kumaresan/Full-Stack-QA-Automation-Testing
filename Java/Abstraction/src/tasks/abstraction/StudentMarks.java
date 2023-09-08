@@ -7,6 +7,7 @@ public class StudentMarks extends AbstractClassExample {
 		System.out.println(AbstractClassExample.b = 11); // inherit static variable and print
 		System.out.println(a + 10); // inherit final variable and modify the value
 		System.out.println(f); // protected variable print
+		
 	}
 
 	public void studentAddress() {
