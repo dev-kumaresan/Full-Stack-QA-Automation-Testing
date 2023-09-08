@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="kumaresan" failures="0" tests="1" name="pageom.testngen.pageexecution.AmazonLoginExecution" time="0.017" errors="0" timestamp="23 Aug 2023 06:11:44 GMT">
+  <testcase classname="pageom.testngen.pageexecution.AmazonLoginExecution" name="chromeLaunch" time="0.004">
+    <skipped/>
+  </testcase>
+</testsuite>

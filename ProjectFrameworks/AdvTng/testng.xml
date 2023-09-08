@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="pageom.testngen.pageexecution.Listeners"></listener>
+	</listeners>
+	<parameter name="browser1" value="chrome"/>
+	<parameter name="browser2" value="firefox"/>
+  <test name="CrossBrowserTest">
+	  <groups>
+		  <run>
+			  <include name="successtests"/>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="pageom.testngen.pageexecution.FlipkartLoginExecution"/>
+    </classes>
+  </test> <!-- CrossBrowserTest -->
+</suite> <!-- Flipkart -->

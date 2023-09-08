@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="kumaresan" failures="0" tests="2" name="pageom.testngen.pageexecution.FlipkartLoginExecution" time="17.365" errors="0" timestamp="5 Sep 2023 10:53:15 GMT">
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="checkMobileNumberInChrome" time="7.32"/>
+  <testcase classname="pageom.testngen.pageexecution.FlipkartLoginExecution" name="checkMobileNumberInFirefox" time="10.025"/>
+</testsuite>
