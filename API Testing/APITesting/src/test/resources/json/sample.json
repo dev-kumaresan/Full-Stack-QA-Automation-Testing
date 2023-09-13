@@ -1,0 +1,15 @@
+{ 
+  "Name" : "Kumaresan",
+  "Age" : 25,
+  "CourseCompleted" : "MCA",
+  "CourseCurrentlyGoing" : "Java Selenium",
+  "Skills" : [ 
+     "Programming : Java",
+     "Automationtool : Selenium",
+     "Frameworks : Junit,TestNG,Cucumber"
+  ],
+  "SelfProjects" : [ 
+     "Project 1 : Automating Forms Validation",
+     "Project 2 : Web Scrapping tool for Instagram Insights"
+  ]
+}
