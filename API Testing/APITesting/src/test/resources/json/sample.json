@@ -1,4 +1,6 @@
-{ 
+{
+ "Detail1" : [ 
+ { 
   "Name" : "Kumaresan",
   "Age" : 25,
   "CourseCompleted" : "MCA",
@@ -12,4 +14,26 @@
      "Project 1 : Automating Forms Validation",
      "Project 2 : Web Scrapping tool for Instagram Insights"
   ]
+  }
+]
+},
+{
+ "Detail2" : [ 
+ 
+ 	{
+ 		"Name" : "Anish",
+ 		"Age" : 25,
+ 		"CourseCompleted" : "MCA",
+ 		"CourseCurrentlyGoing" : "Photoshop",
+ 		"Skills" : [ 
+ 			"Programming : Java",
+ 			"Automation Tool : Selenium",
+ 			"Frameworks : Junit,TestNG",
+ 		],
+ 		"SelfProjects" : [ 
+ 				"Project 1 : joystick App",
+ 				"Project 2 : abandant cart recovery app"
+ 		]
+ 	}
+ ]
 }
