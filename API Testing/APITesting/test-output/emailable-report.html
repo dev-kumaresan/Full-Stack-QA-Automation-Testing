@@ -29,44 +29,15 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">1.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">mydata.PostmanData<td><a href="#m1"><b>localTest</b>  </a></td><td class="numi">1</td><td class="numi">1462</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">mydata.PostmanData<td><a href="#m1"><b>get</b>  </a></td><td class="numi">1</td><td class="numi">1016</td></tr>
 </table>
 <h1>Default test</h1>
-<a id="m1"></a><h2>mydata.PostmanData:localTest</h2>
-<div style="padding-left:3em">
-<p>1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;500&gt;.
-</p>
-java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-<br/>at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-<br/>at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-<br/>at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-<br/>at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-<br/>at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-<br/>at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-<br/>at mydata.PostmanData.localTest(PostmanData.java:70)
-<br/>24 lines not shown
-</div>
+<a id="m1"></a><h2>mydata.PostmanData:get</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -5,7 +5,7 @@
     <classes>
       <class name="mydata.PostmanData">
         <methods>
-          <include name="localTest"/>
+          <include name="post"/>
         </methods>
       </class>
     </classes>
