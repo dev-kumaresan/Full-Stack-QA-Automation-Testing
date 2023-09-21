@@ -21,7 +21,7 @@
  "Detail2" : [ 
  
  	{
- 		"Name" : "Anish",
+ 		"Name" : "Ravi",
  		"Age" : 25,
  		"CourseCompleted" : "MCA",
  		"CourseCurrentlyGoing" : "Photoshop",
@@ -31,8 +31,8 @@
  			"Frameworks : Junit,TestNG",
  		],
  		"SelfProjects" : [ 
- 				"Project 1 : joystick App",
- 				"Project 2 : abandant cart recovery app"
+ 				"Project 1 : Amazon app module",
+ 				"Project 2 : FLipkart App module"
  		]
  	}
  ]
