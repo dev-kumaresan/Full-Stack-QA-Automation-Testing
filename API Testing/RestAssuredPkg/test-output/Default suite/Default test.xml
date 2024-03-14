@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="kumaresan" failures="0" tests="1" name="test.pageom.basepackage.ApiTest" time="1.002" errors="0" timestamp="14 Mar 2024 16:40:19 GMT">
+  <testcase classname="test.pageom.basepackage.ApiTest" name="delete" time="0.995"/>
+</testsuite>
